@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'four-zero-four', component: FourZeroFourComponent },
   { path: 'submit-bourbon', component: SubmitBourbonComponent },
   { path: 'na-page', component: NaPageComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
+  { path: '', redirectTo: '/landing-page', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: FourZeroFourComponent }, // Wildcard route for a 404 page
 ];
 
