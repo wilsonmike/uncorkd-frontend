@@ -1,0 +1,88 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+.main-focus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.branding {
+  font-family: "Amaranth", sans-serif;
+  font-size: 30px;
+  color: white;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+  animation: wiggle 2.5s infinite;
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.round-background {
+  height: 50%;
+  width: 100%;
+  background-color: #ffd984;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.drinking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 30vh;
+  width: 100%;
+}
+.twenty-one {
+  font-family: "Amaranth", sans-serif;
+  color: #ffb954;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.no-button {
+  margin: 0;
+  padding: 20px;
+}
+.yes-button {
+  margin: 0;
+  padding: 20px;
+}
+.mat-raised-button {
+  background-color: #ffb954;
+  color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.triple-menu {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.header {
+  display: relative;
+}

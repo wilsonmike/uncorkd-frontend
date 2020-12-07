@@ -1,0 +1,22 @@
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img
+        src="assets/honey.svg"
+        alt="Avatar"
+        style="width: 80px; height: 80px"
+      />
+    </div>
+    <div class="flip-card-back">
+      <h1>John Doe</h1>
+      <p>Architect & Engineer</p>
+      <p>We love that guy</p>
+    </div>
+  </div>
+</div>
+
+<ul *ngFor="let bourbon of bourbons">
+  <img src="{{ bourbon.img_url }}" alt="Picture of Bourbon" />
+  <li>{{ bourbon.brand }}</li>
+  <li>{{ bourbon.description }}</li>
+</ul>
