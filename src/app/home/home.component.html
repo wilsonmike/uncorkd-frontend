@@ -2,23 +2,63 @@
   <img class="logo" src="assets/cork-icons.svg" alt="UnCorKd Logo" />
   <p class="branding">UnCorkd</p>
 </header>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img
-        src="assets/honey.svg"
-        alt="Avatar"
-        style="width: 80px; height: 80px"
-      />
+<div class="flip">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img class="honey" src="assets/honey.svg" alt="Avatar" style="" />
+      </div>
+      <div class="flip-card-back">
+        <h1>Honey</h1>
+        <p>If you love Teddy Grahams this is the flavor for you.</p>
+        <button mat-raised-button>Get Suggestion</button>
+      </div>
     </div>
-    <div class="flip-card-back">
-      <h1>John Doe</h1>
-      <p>Architect & Engineer</p>
-      <p>We love that guy</p>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img class="honey" src="assets/coffee-bean.svg" alt="Avatar" style="" />
+      </div>
+      <div class="flip-card-back">
+        <h1>Honey</h1>
+        <p>If you love Teddy Grahams this is the flavor for you.</p>
+        <button mat-raised-button>Get Suggestion</button>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img class="honey" src="assets/tobacco.svg" alt="Avatar" style="" />
+      </div>
+      <div class="flip-card-back">
+        <h1>Tobacco</h1>
+        <p>If you love Teddy Grahams this is the flavor for you.</p>
+        <button mat-raised-button>Get Suggestion</button>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img
+          class="honey"
+          src="assets/chocolate-bar.svg"
+          alt="Avatar"
+          style=""
+        />
+      </div>
+      <div class="flip-card-back">
+        <h1>Chocolate Bar</h1>
+        <p>If you love Teddy Grahams this is the flavor for you.</p>
+        <button mat-raised-button>Get Suggestion</button>
+      </div>
     </div>
   </div>
 </div>
 
+<h2>Trending</h2>
 <ul *ngFor="let bourbon of bourbons">
   <img src="{{ bourbon.img_url }}" alt="Picture of Bourbon" />
   <li>{{ bourbon.brand }}</li>
