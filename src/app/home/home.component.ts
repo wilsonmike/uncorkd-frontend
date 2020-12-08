@@ -37,6 +37,14 @@ export class HomeComponent implements OnInit {
     });
   };
 
+  getFlavors = (flavor: string) => {
+    console.log('clicked');
+    this.service.getFlavors(flavor).subscribe((response) => {
+      this.bourbons = response;
+    });
+  };
+
+  //KEEP THIS
   customOptions: any = {
     loop: true,
     mouseDrag: true,
