@@ -6,7 +6,26 @@
   <div class="welcome">
     <p>Welcome to UnCorkd, let us take you to flavor town.</p>
   </div>
-  <div class="flip">
+  <div style="text-align: center">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide
+        ><img class="honey" src="assets/honey.svg" alt="Avatar"
+      /></ng-template>
+      <ng-template carouselSlide
+        ><img class="honey" src="assets/coffee-bean.svg" alt="Avatar"
+      /></ng-template>
+      <ng-template carouselSlide
+        ><img class="honey" src="assets/tobacco.svg" alt="Avatar"
+      /></ng-template>
+      <ng-template carouselSlide>
+        <img class="honey" src="assets/chocolate-bar.svg" alt="Avatar"
+      /></ng-template>
+      <ng-template carouselSlide
+        ><img class="honey" src="assets/ice-cream.svg"
+      /></ng-template>
+    </owl-carousel-o>
+  </div>
+  <!-- <div class="flip">
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
@@ -37,7 +56,7 @@
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <img class="honey" src="assets/tobacco.svg" alt="Avatar" style="" />
+          <img class="honey" src="assets/tobacco.svg" alt="Avatar" />
         </div>
         <div class="flip-card-back">
           <h1>Tobacco</h1>
@@ -48,12 +67,7 @@
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <img
-            class="honey"
-            src="assets/chocolate-bar.svg"
-            alt="Avatar"
-            style=""
-          />
+          <img class="honey" src="assets/chocolate-bar.svg" alt="Avatar" />
         </div>
         <div class="flip-card-back">
           <h1>Chocolate</h1>
@@ -61,7 +75,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <h2>Trending</h2>
