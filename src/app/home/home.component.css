@@ -5,8 +5,15 @@ img {
 }
 .header {
   display: flex;
+  justify-content: space-between;
   height: 50px;
   align-items: center;
+}
+.ranked {
+  font-size: 14px;
+  font-family: "Amaranth", sans-serif;
+  margin-right: 20px;
+  color: #fff7ed;
 }
 .logo {
   height: 30px;
@@ -18,10 +25,14 @@ img {
   height: 80px;
   /* margin-top: 30px; */
 }
+.main-top {
+  background-color: #ffd984;
+  height: 50%;
+}
 .branding {
   font-family: "Amaranth", sans-serif;
   font-size: 20px;
-  color: black;
+  color: white;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
@@ -34,11 +45,24 @@ img {
   margin: 0 auto;
 }
 
+.welcome {
+  color: #fff7ed;
+  font-family: "Amaranth", sans-serif;
+  font-size: 24px;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   width: 150px;
-  height: 150px;
+  height: 100px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   padding: 10px;
 }
@@ -73,14 +97,15 @@ img {
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   display: flex;
-  background-color: #ffd984;
+  background-color: #fff7ed;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: #ffb954;
   color: white;
   transform: rotateY(180deg);
   font-size: 11px;
