@@ -8,6 +8,7 @@
   </header>
   <div class="welcome">
     <p>Welcome to UnCorkd, let us take you to flavor town.</p>
+  
   </div>
   <div style="text-align: center">
     <owl-carousel-o [options]="customOptions">
@@ -19,7 +20,8 @@
             </div>
             <div class="flip-card-back">
               <h1>Honey</h1>
-              <button mat-raised-button>Get Suggestion</button>
+              <button mat-raised-button (click)="getFlavors('honey')">Get Suggestion</button>
+             
             </div>
           </div>
         </div></ng-template
@@ -32,7 +34,7 @@
             </div>
             <div class="flip-card-back">
               <h1>Coffee</h1>
-              <button mat-raised-button>Get Suggestion</button>
+              <button mat-raised-button (click)="getFlavors('coffee')">Get Suggestion</button>
             </div>
           </div>
         </div></ng-template
@@ -45,7 +47,7 @@
             </div>
             <div class="flip-card-back">
               <h1>Tobacco</h1>
-              <button mat-raised-button>Get Suggestion</button>
+              <button mat-raised-button (click)="getFlavors('tobacco')">Get Suggestion</button>
             </div>
           </div>
         </div></ng-template
@@ -58,7 +60,7 @@
             </div>
             <div class="flip-card-back">
               <h1>Chocolate</h1>
-              <button mat-raised-button>Get Suggestion</button>
+              <button mat-raised-button (click)="getFlavors('chocolate')">Get Suggestion</button>
             </div>
           </div>
         </div></ng-template
@@ -70,8 +72,8 @@
               <img class="honey" src="assets/ice-cream.svg" alt="Avatar" />
             </div>
             <div class="flip-card-back">
-              <h1>Chocolate</h1>
-              <button mat-raised-button>Get Suggestion</button>
+              <h1>Vanilla</h1>
+              <button mat-raised-button (click)="getFlavors('vanilla')">Get Suggestion</button>
             </div>
           </div>
         </div></ng-template
@@ -86,7 +88,7 @@
         </div>
         <div class="flip-card-back">
           <h1>Honey</h1>
-          <button mat-raised-button>Get Suggestion</button>
+          <button mat-raised-button ngClick="getFlavors()">Get Suggestion</button>
         </div>
       </div>
     </div>

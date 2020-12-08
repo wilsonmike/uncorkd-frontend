@@ -22,4 +22,12 @@ export class ServiceService {
       },
     });
   };
+
+  getFlavors = (flavor: string): any => {
+    return this.http.get(`${this.baseUrl}/flavor`, {
+      params: {
+        flavor: flavor,
+      },
+    });
+  };
 }
