@@ -25,6 +25,12 @@ img {
   height: 80px;
   /* margin-top: 30px; */
 }
+.owl-carousel .owl-nav .owl-prev {
+  background: url("/frontend/assets/play-button.svg") no-repeat;
+}
+.owl-carousel .owl-nav .owl-next {
+  background: url("/frontend/assets/play-button.svg") no-repeat;
+}
 .main-top {
   background-color: #ffd984;
   height: 50%;
