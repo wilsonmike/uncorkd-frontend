@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { Routes, RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MatButtonModule } from '@angular/material/button';
@@ -13,6 +15,8 @@ import { NaPageComponent } from './na-page/na-page.component';
 import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component';
 import { SubmitBourbonComponent } from './submit-bourbon/submit-bourbon.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SearchFormComponent } from './search-form/search-form.component';
+
 
 @NgModule({
   declarations: [
@@ -22,12 +26,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NaPageComponent,
     FourZeroFourComponent,
     SubmitBourbonComponent,
+    SearchFormComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatSliderModule,
     MatButtonModule,
     CarouselModule,

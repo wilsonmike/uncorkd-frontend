@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { ServiceService } from '../service.service';
 
 @Component({
@@ -9,15 +10,28 @@ import { ServiceService } from '../service.service';
 export class HomeComponent implements OnInit {
   bourbons = [];
 
-  constructor(private service: ServiceService) {}
+  constructor(private service: ServiceService, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.getBourbons();
-    console.log(this.getBourbons());
+    this.route.queryParamMap.subscribe((response) => {
+      let term = response.get('term');
+      console.log(term);
+      if (term) {
+        this.getBourbons(term);
+      } else {
+        this.getTrending();
+      }
+    });
   }
 
-  getBourbons = () => {
-    this.service.getBourbons().subscribe((response) => {
+  getBourbons = (term: string) => {
+    this.service.getBourbons(term).subscribe((response) => {
+      console.log(response);
+    });
+  };
+
+  getTrending = () => {
+    this.service.getTrending().subscribe((response) => {
       this.bourbons = response;
       console.log(this.bourbons);
     });

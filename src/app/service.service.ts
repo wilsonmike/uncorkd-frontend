@@ -11,7 +11,15 @@ export class ServiceService {
 
   constructor(private router: Router, private http: HttpClient) {}
 
-  getBourbons = (): any => {
-    return this.http.get(`${this.baseUrl}/bourbon`);
+  getTrending = (): any => {
+    return this.http.get(`${this.baseUrl}/trending`);
+  };
+
+  getBourbons = (term: string): any => {
+    return this.http.get(`${this.baseUrl}/bourbons`, {
+      params: {
+        term: term,
+      },
+    });
   };
 }
