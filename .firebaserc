@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "uncorkd-f5f76": {
+      "hosting": {
+        "frontend": [
+          "uncorkd-f5f76"
+        ]
+      }
+    }
+  }
+}

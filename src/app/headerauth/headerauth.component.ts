@@ -6,19 +6,19 @@ import { catchError, takeUntil } from 'rxjs/operators';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
-  selector: 'app-landing-page',
-  templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.css'],
+  selector: 'app-headerauth',
+  templateUrl: './headerauth.component.html',
+  styleUrls: ['./headerauth.component.css']
 })
-export class LandingPageComponent implements OnInit, OnDestroy {
+export class HeaderauthComponent implements OnInit,OnDestroy {
   destroyed$: Subject<null> = new Subject();
   user$: Observable<firebase.User> = this.authService.user$;
-  constructor(
-    private authService: AuthService,
-    private snackBar: MatSnackBar
-  ) {}
 
-  ngOnInit(): void {}
+  constructor(private authService: AuthService,
+    private snackBar: MatSnackBar) { }
+
+  ngOnInit(): void {
+  }
   login() {
     this.authService
       .login()
@@ -54,4 +54,5 @@ export class LandingPageComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.destroyed$.next();
   }
+
 }
