@@ -145,7 +145,7 @@
 <app-card
   *ngFor="let bourbon of bourbons"
   [bourbonRef]="bourbon"
-  (saveEvent)="editSaved($event)"
+  (saveEvent)="toggleSaved($event)"
 >
 </app-card>
 

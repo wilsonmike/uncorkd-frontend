@@ -1,14 +1,12 @@
-
-
 <div class="bourbon-card">
-
-<ul>
+  <ul>
     <img src="{{ bourbonRef.img_url }}" alt="Picture of Bourbon" />
     <li>{{ bourbonRef.brand }}</li>
     <li>{{ bourbonRef.description }}</li>
-    <i class="far fa-bookmark"
-    (click)="toggleSaved(bourbonRef)"
-    [ngClass]="{ saved: bourbonRef.isSaved }"
+    <i
+      class="far fa-bookmark"
+      (click)="toggleSaved(bourbonRef)"
+      [ngClass]="{ saved: bourbonRef.isSaved }"
     ></i>
-</ul>
+  </ul>
 </div>

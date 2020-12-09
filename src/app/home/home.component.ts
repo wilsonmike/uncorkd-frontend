@@ -58,6 +58,10 @@ export class HomeComponent implements OnInit {
     console.log(this.saved);
   };
 
+  toggleSaved = (saved: Saved): void => {
+    this.service.editSaved(saved);
+  };
+
   //KEEP THIS
   customOptions: any = {
     autoplay: true,

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Saved } from '../interfaces/saved';
 import { ServiceService } from '../service.service';
 
@@ -8,12 +8,14 @@ import { ServiceService } from '../service.service';
   styleUrls: ['./saved.component.css'],
 })
 export class SavedComponent implements OnInit {
+  @Input() bourbonRef: any;
   saved: Saved[] = [];
   constructor(private service: ServiceService) {}
 
   ngOnInit(): void {
     this.saved = this.service.getSaved();
     console.log(this.saved);
+    // this.getSaved();
   }
 
   getSaved = () => {
