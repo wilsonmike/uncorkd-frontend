@@ -5,11 +5,10 @@
     <app-search-form>
       (submitEvent)="getSearchTerm($event.searchTerm)"
     </app-search-form>
-    <nav routerLink="/saved" >Saved</nav>
+    <nav routerLink="/saved">Saved</nav>
   </header>
   <div class="welcome">
     <p>Welcome to UnCorkd, let us take you to flavor town.</p>
-  
   </div>
   <div style="text-align: center">
     <owl-carousel-o [options]="customOptions">
@@ -21,8 +20,9 @@
             </div>
             <div class="flip-card-back">
               <h1>Honey</h1>
-              <button mat-raised-button (click)="getFlavors('honey')">Get Suggestion</button>
-             
+              <button mat-raised-button (click)="getFlavors('honey')">
+                Get Suggestion
+              </button>
             </div>
           </div>
         </div></ng-template
@@ -35,7 +35,9 @@
             </div>
             <div class="flip-card-back">
               <h1>Coffee</h1>
-              <button mat-raised-button (click)="getFlavors('coffee')">Get Suggestion</button>
+              <button mat-raised-button (click)="getFlavors('coffee')">
+                Get Suggestion
+              </button>
             </div>
           </div>
         </div></ng-template
@@ -48,7 +50,9 @@
             </div>
             <div class="flip-card-back">
               <h1>Tobacco</h1>
-              <button mat-raised-button (click)="getFlavors('tobacco')">Get Suggestion</button>
+              <button mat-raised-button (click)="getFlavors('tobacco')">
+                Get Suggestion
+              </button>
             </div>
           </div>
         </div></ng-template
@@ -61,7 +65,9 @@
             </div>
             <div class="flip-card-back">
               <h1>Chocolate</h1>
-              <button mat-raised-button (click)="getFlavors('chocolate')">Get Suggestion</button>
+              <button mat-raised-button (click)="getFlavors('chocolate')">
+                Get Suggestion
+              </button>
             </div>
           </div>
         </div></ng-template
@@ -74,7 +80,9 @@
             </div>
             <div class="flip-card-back">
               <h1>Vanilla</h1>
-              <button mat-raised-button (click)="getFlavors('vanilla')">Get Suggestion</button>
+              <button mat-raised-button (click)="getFlavors('vanilla')">
+                Get Suggestion
+              </button>
             </div>
           </div>
         </div></ng-template
@@ -134,9 +142,10 @@
   </div> -->
 </div>
 
-
-<app-card *ngFor="let bourbon of bourbons" 
-[bourbonRef]="bourbon"
+<app-card
+  *ngFor="let bourbon of bourbons"
+  [bourbonRef]="bourbon"
+  (saveEvent)="editSaved($event)"
 >
 </app-card>
 
