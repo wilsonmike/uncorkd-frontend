@@ -39,6 +39,16 @@ import { ProfileCardComponent } from './profile-card/profile-card.component';
     HeaderauthComponent,
     ProfileCardComponent,
   ],
+  exports: [
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatIconModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatTooltipModule,
+    MatSnackBarModule,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

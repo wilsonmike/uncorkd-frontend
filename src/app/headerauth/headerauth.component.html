@@ -5,11 +5,8 @@
         backup
       </mat-icon>
     </button>
-    <button mat-icon-button (click)="logout()">
-      <mat-icon matTooltip="Logout" aria-hidden="false" aria-label="Logout">
-        power_settings_new
-      </mat-icon>
-    </button>
+    <app-profile-card [user]="user" (logoutClick)="logout()">
+    </app-profile-card>
   </ng-container>
   <ng-template #loginButtonContainer>
     <button mat-icon-button (click)="login()">
