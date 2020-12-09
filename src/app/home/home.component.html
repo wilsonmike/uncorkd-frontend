@@ -2,10 +2,11 @@
   <header class="header">
     <img class="logo" src="assets/cork-icons.svg" alt="UnCorKd Logo" />
     <h3 class="ranked">Ranked</h3>
-    <app-search-form>
+    <app-search-form class="search-bar">
       (submitEvent)="getSearchTerm($event.searchTerm)"
     </app-search-form>
     <nav routerLink="/saved">Saved</nav>
+    <app-headerauth></app-headerauth>
   </header>
   <div class="welcome">
     <p>Welcome to UnCorkd, let us take you to flavor town.</p>
