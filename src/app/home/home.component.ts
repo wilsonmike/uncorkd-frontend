@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit {
   //KEEP THIS
   customOptions: any = {
     autoplay: true,
-    autoplayTimeout: 1000,
+    autoplayTimeout: 2000,
     autoplayHoverPause: true,
     loop: true,
     mouseDrag: true,
