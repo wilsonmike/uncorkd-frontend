@@ -24,6 +24,7 @@ import { SearchFormComponent } from './search-form/search-form.component';
 import { SavedComponent } from './saved/saved.component';
 import { AppFirebaseModule } from './app-firebase.module';
 import { HeaderauthComponent } from './headerauth/headerauth.component';
+import { ProfileCardComponent } from './profile-card/profile-card.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,17 @@ import { HeaderauthComponent } from './headerauth/headerauth.component';
     SearchFormComponent,
     SavedComponent,
     HeaderauthComponent,
+    ProfileCardComponent,
+  ],
+  exports: [
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatIconModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatTooltipModule,
+    MatSnackBarModule,
   ],
   imports: [
     BrowserModule,

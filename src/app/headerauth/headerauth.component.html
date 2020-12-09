@@ -1,7 +1,18 @@
 <div class="heady">
-  <button mat-icon-button (click)="login()">
-    <mat-icon matTooltip="Login" aria-hidden="false" aria-label="Login">
-      fingerprint
-    </mat-icon>
-  </button>
+  <ng-container *ngIf="user$ | async as user; else loginButtonContainer">
+    <button mat-icon-button>
+      <mat-icon matTooltip="Create" aria-hidden="false" aria-label="Create">
+        backup
+      </mat-icon>
+    </button>
+    <app-profile-card [user]="user" (logoutClick)="logout()">
+    </app-profile-card>
+  </ng-container>
+  <ng-template #loginButtonContainer>
+    <button mat-icon-button (click)="login()">
+      <mat-icon matTooltip="Login" aria-hidden="false" aria-label="Login">
+        fingerprint
+      </mat-icon>
+    </button>
+  </ng-template>
 </div>
