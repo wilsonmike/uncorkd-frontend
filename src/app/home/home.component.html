@@ -5,6 +5,7 @@
     <app-search-form>
       (submitEvent)="getSearchTerm($event.searchTerm)"
     </app-search-form>
+    <nav routerLink="/saved" >Saved</nav>
   </header>
   <div class="welcome">
     <p>Welcome to UnCorkd, let us take you to flavor town.</p>
@@ -138,4 +139,5 @@
   <img src="{{ bourbon.img_url }}" alt="Picture of Bourbon" />
   <li>{{ bourbon.brand }}</li>
   <li>{{ bourbon.description }}</li>
+  <button>Save</button>
 </ul>

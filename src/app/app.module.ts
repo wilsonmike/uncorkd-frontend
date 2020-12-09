@@ -16,7 +16,7 @@ import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component
 import { SubmitBourbonComponent } from './submit-bourbon/submit-bourbon.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchFormComponent } from './search-form/search-form.component';
-
+import { SavedComponent } from './saved/saved.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +27,7 @@ import { SearchFormComponent } from './search-form/search-form.component';
     FourZeroFourComponent,
     SubmitBourbonComponent,
     SearchFormComponent,
+    SavedComponent,
   ],
   imports: [
     BrowserModule,
