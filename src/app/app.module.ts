@@ -25,6 +25,7 @@ import { SavedComponent } from './saved/saved.component';
 import { AppFirebaseModule } from './app-firebase.module';
 import { HeaderauthComponent } from './headerauth/headerauth.component';
 import { ProfileCardComponent } from './profile-card/profile-card.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { ProfileCardComponent } from './profile-card/profile-card.component';
     SavedComponent,
     HeaderauthComponent,
     ProfileCardComponent,
+    CardComponent,
   ],
   exports: [
     BrowserAnimationsModule,

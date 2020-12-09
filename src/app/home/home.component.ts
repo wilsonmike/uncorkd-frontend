@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Saved } from '../interfaces/saved';
 import { ServiceService } from '../service.service';
 
 @Component({
@@ -9,6 +10,7 @@ import { ServiceService } from '../service.service';
 })
 export class HomeComponent implements OnInit {
   bourbons = [];
+  saved: Saved[] = [];
 
   constructor(private service: ServiceService, private route: ActivatedRoute) {}
 
@@ -44,14 +46,29 @@ export class HomeComponent implements OnInit {
     });
   };
 
+  editSaved = (saved: Saved): void => {
+    let index = this.saved.findIndex((item) => {
+      return item.img_url === saved.img_url;
+    });
+    if (index === -1) {
+      this.saved.push(saved);
+    } else {
+      this.saved.splice(index, 1);
+    }
+    console.log(this.saved);
+  };
+
   //KEEP THIS
   customOptions: any = {
+    autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
     loop: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
     dots: false,
-    navSpeed: 500,
+    navSpeed: 600,
     navText: ['', ''],
     responsive: {
       0: {

@@ -4,4 +4,5 @@ export interface Saved {
   brand: string;
   distillery: string;
   description: string;
+  isSaved: boolean;
 }
