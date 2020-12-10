@@ -14,17 +14,19 @@
 </button>
 
 <mat-menu #menu="matMenu">
-  <img [src]="user.photoURL" [alt]="user.displayName" class="big-avatar" />
-  <h4>
-    {{ user.displayName }}
-  </h4>
-  <p>
-    {{ user.email }}
-  </p>
-  <mat-divider></mat-divider>
-  <button (click)="logout()" mat-stroked-button>
-    Sign out ya filthy animal
-  </button>
-  <mat-divider></mat-divider>
-  <div class="profile-footer">Made with 🦄 from the bossgroup</div>
+  <div class="profile-card">
+    <img [src]="user.photoURL" [alt]="user.displayName" class="big-avatar" />
+    <h4>
+      {{ user.displayName }}
+    </h4>
+    <p>
+      {{ user.email }}
+    </p>
+    <mat-divider></mat-divider>
+    <button (click)="logout()" mat-stroked-button>
+      Sign out, be back soon!
+    </button>
+    <mat-divider></mat-divider>
+    <div class="profile-footer">Made with 🦄 from the bossgroup</div>
+  </div>
 </mat-menu>

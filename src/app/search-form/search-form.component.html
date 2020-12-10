@@ -1,5 +1,16 @@
-<form #searchForm="ngForm" (ngSubmit)="getSearchTerm(searchForm)">
-  <label for="search">Search Bourbons</label>
-  <input type="text" name="search" id="search" ngModel />
-  <button>Submit</button>
+<form
+  class="search-bar"
+  #searchForm="ngForm"
+  (ngSubmit)="getSearchTerm(searchForm)"
+>
+  <label for="search"></label>
+  <input
+    class="input"
+    type="text"
+    name="search"
+    id="search"
+    placeholder="Search Brands"
+    ngModel
+  />
+  <button class="submit-search">Submit</button>
 </form>

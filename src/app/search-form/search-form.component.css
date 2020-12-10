@@ -1,0 +1,28 @@
+.search-bar {
+  font-size: 16px;
+  font-family: "Amaranth", sans-serif;
+  margin-right: 10px;
+  color: #fff7ed;
+}
+.input {
+  border: none;
+  border-bottom: 1px solid #fff7ed;
+  background: transparent;
+  margin-right: 5px;
+  outline: none;
+  color: #fff7ed;
+}
+::placeholder {
+  font-size: 14px;
+  color: #fff7ed;
+  font-family: "Amaranth", sans-serif;
+}
+.submit-search {
+  background-color: #ffb954;
+  color: white;
+  border: none;
+  outline: none;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
