@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { Saved } from '../interfaces/saved';
 import { ServiceService } from '../service.service';
@@ -28,7 +29,7 @@ export class HomeComponent implements OnInit {
 
   getBourbons = (term: string) => {
     this.service.getBourbons(term).subscribe((response) => {
-      console.log(response);
+      this.bourbons = response;
     });
   };
 
