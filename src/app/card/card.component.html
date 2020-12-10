@@ -4,9 +4,12 @@
     <li>{{ bourbonRef.brand }}</li>
     <li>{{ bourbonRef.description }}</li>
     <i
-      class="far fa-bookmark"
+      [ngClass]="{
+        saved: bourbonRef.isSaved,
+        'red-class': !bourbonRef.isSaved
+      }"
+      class="fas fa-bookmark"
       (click)="toggleSaved(bourbonRef)"
-      [ngClass]="{ saved: bourbonRef.isSaved }"
     ></i>
   </ul>
 </div>

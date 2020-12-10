@@ -17,15 +17,21 @@ export class CardComponent implements OnInit {
     console.log(this.bourbonRef);
   }
 
-  toggleSaved = (recipe: any) => {
+  toggleSaved = (bourbon: any) => {
     let save: Saved = {
-      id: this.bourbonRef.id,
-      img_url: this.bourbonRef.img_url,
-      brand: this.bourbonRef.brand,
-      distillery: this.bourbonRef.distillery,
-      description: this.bourbonRef.description,
-      isSaved: false,
+      id: bourbon.id,
+      img_url: bourbon.img_url,
+      brand: bourbon.brand,
+      distillery: bourbon.distillery,
+      description: bourbon.description,
+      isSaved: true,
     };
+    if (bourbon.isSaved === true) {
+      bourbon.isSaved = false;
+    } else {
+      bourbon.isSaved = true;
+    }
     this.saveEvent.emit(save);
+    console.log(bourbon);
   };
 }
