@@ -5,11 +5,24 @@ img {
 }
 .header {
   display: flex;
-  justify-content: space-between;
   height: 50px;
   align-items: center;
 }
+.header-auth {
+  margin-right: 20px;
+}
+.header-group {
+  margin-left: auto;
+}
 .search-bar {
+}
+.saved {
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "Amaranth", sans-serif;
+  margin-left: auto;
+  margin-right: 20px;
+  color: #fff7ed;
 }
 .ranked {
   font-size: 14px;
@@ -35,7 +48,7 @@ img {
 }
 .main-top {
   background-color: #ffd984;
-  height: 50%;
+  height: 60%;
 }
 .branding {
   font-family: "Amaranth", sans-serif;
@@ -56,7 +69,7 @@ img {
 .welcome {
   color: #fff7ed;
   font-family: "Amaranth", sans-serif;
-  font-size: 24px;
+  font-size: 30px;
   display: flex;
   text-align: center;
   width: 100%;
