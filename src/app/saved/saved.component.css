@@ -39,3 +39,8 @@
 .star-input:checked + .star ~ .star {
   color: rgb(245, 242, 197);
 }
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}

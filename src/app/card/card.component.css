@@ -6,3 +6,8 @@
 .saved {
   background-color: rgb(150, 135, 52);
 }
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
