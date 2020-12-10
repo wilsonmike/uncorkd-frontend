@@ -1,3 +1,14 @@
+<header class="header">
+  <img
+    routerLink="/home"
+    class="logo"
+    src="assets/cork-icons.svg"
+    alt="UnCorKd Logo"
+  />
+  <!-- <h3 class="ranked">Ranked</h3> -->
+  <a class="home" routerLink="/home">Home</a>
+  <app-headerauth class="header-auth"></app-headerauth>
+</header>
 <ul *ngFor="let save of saved">
   <img src="{{ save.img_url }}" alt="Picture of Bourbon" />
   <li>{{ save.brand }}</li>
