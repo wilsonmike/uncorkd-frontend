@@ -10,7 +10,13 @@
   </ng-container>
   <ng-template #loginButtonContainer>
     <button mat-icon-button (click)="login()">
-      <mat-icon matTooltip="Login" aria-hidden="false" aria-label="Login">
+      <mat-icon
+        class="finger"
+        matTooltip="Login"
+        aria-hidden="false"
+        aria-label="Login"
+        [ngStyle]="{ color: 'white' }"
+      >
         fingerprint
       </mat-icon>
     </button>
