@@ -4,7 +4,11 @@
 } */
 
 .saved {
+<<<<<<< Updated upstream
   color: rgb(150, 135, 52);
+=======
+  color: rgb(167, 27, 27);
+>>>>>>> Stashed changes
 }
 
 img {
