@@ -155,6 +155,90 @@
           </div>
         </div></ng-template
       >
+      <ng-template carouselSlide
+        ><div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img class="honey" src="assets/orange.svg" alt="Avatar" />
+            </div>
+            <div class="flip-card-back">
+              <h1>Orange</h1>
+              <p class="p-padded">
+                Max Proof <span class="slide">...just slide</span>
+              </p>
+              <input
+                class="slider"
+                type="range"
+                min="50"
+                max="180"
+                name="calories"
+                oninput="this.nextElementSibling.value = this.value"
+                ngModel
+              />
+              <output></output>
+              <button mat-raised-button (click)="getFlavors('orange')">
+                Get Suggestion
+              </button>
+            </div>
+          </div>
+        </div></ng-template
+      >
+      <ng-template carouselSlide
+        ><div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img class="honey" src="assets/mint.svg" alt="Avatar" />
+            </div>
+            <div class="flip-card-back">
+              <h1>Mint</h1>
+              <p class="p-padded">
+                Max Proof <span class="slide">...just slide</span>
+              </p>
+              <input
+                class="slider"
+                type="range"
+                min="50"
+                max="180"
+                name="calories"
+                oninput="this.nextElementSibling.value = this.value"
+                ngModel
+              />
+              <output></output>
+              <button mat-raised-button (click)="getFlavors('mint')">
+                Get Suggestion
+              </button>
+            </div>
+          </div>
+        </div></ng-template
+      >
+      <ng-template carouselSlide
+        ><div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img class="honey" src="assets/cinnamon.svg" alt="Avatar" />
+            </div>
+            <div class="flip-card-back">
+              <h1>Cinnamon</h1>
+              <p class="p-padded">
+                Max Proof <span class="slide">...just slide</span>
+              </p>
+              <input
+                class="slider"
+                type="range"
+                min="50"
+                max="180"
+                name="calories"
+                oninput="this.nextElementSibling.value = this.value"
+                ngModel
+              />
+              <output></output>
+              <button mat-raised-button (click)="getFlavors('cinnamon')">
+                Get Suggestion
+              </button>
+            </div>
+          </div>
+        </div></ng-template
+      >
     </owl-carousel-o>
   </div>
   <!-- <div class="flip">
