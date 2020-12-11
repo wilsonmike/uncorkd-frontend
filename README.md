@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
 
+## Backend
+
+This project was generated with [Express] (https://github.com/wilsonmike/uncorkd/tree/main/backend) version 4.17.1. [Postgress] version 8.5.1
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
