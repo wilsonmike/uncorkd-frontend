@@ -55,6 +55,16 @@
       checked
     />
     <label for="{{ save.id }}5" class="star"><i class="fas fa-star"></i></label>
-    <button class="submit-star">Send</button>
+    <ng-container *ngIf="user$ | async as user; else loginButtonContainer">
+      <button mat-icon-button>
+        <mat-icon matTooltip="Create" aria-hidden="false" aria-label="Create">
+          backup
+        </mat-icon>
+      </button>
+      <app-profile-card [user]="user" (logoutClick)="logout()">
+      </app-profile-card>
+      {{ user.uid }}
+    </ng-container>
+    <button (click)="getUser()" class="submit-star">Send</button>
   </form>
 </ul>

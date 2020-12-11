@@ -16,4 +16,8 @@ export class ProfileCardComponent implements OnInit {
   logout() {
     this.logoutClick.emit();
   }
+
+  sendUserId = () => {
+    console.log(this.user.uid);
+  };
 }
