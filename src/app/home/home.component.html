@@ -143,13 +143,14 @@
   </div> -->
 </div>
 
-<app-card
-  *ngFor="let bourbon of bourbons"
-  [bourbonRef]="bourbon"
-  (saveEvent)="toggleSaved($event)"
->
-</app-card>
-
+<div class="card-container">
+  <app-card
+    *ngFor="let bourbon of bourbons"
+    [bourbonRef]="bourbon"
+    (saveEvent)="toggleSaved($event)"
+  >
+  </app-card>
+</div>
 <!-- <ul *ngFor="let bourbon of bourbons">
   <img src="{{ bourbon.img_url }}" alt="Picture of Bourbon" />
   <li>{{ bourbon.brand }}</li>

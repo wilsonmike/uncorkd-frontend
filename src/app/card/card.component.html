@@ -1,4 +1,4 @@
-<div class="bourbon-card">
+<!-- <div class="bourbon-card">
   <ul class="card-list">
     <img src="{{ bourbonRef.img_url }}" alt="Picture of Bourbon" />
     <li>{{ bourbonRef.brand }}</li>
@@ -12,4 +12,55 @@
       (click)="toggleSaved(bourbonRef)"
     ></i>
   </ul>
+</div> -->
+
+<div class="wrapper">
+  <div class="container">
+    <div class="top">
+      <img src="{{ bourbonRef.img_url }}" alt="Picture of Bourbon" />
+    </div>
+    <div class="bottom">
+      <div class="left">
+        <div class="left-details">
+          <h1>{{ bourbonRef.brand }}</h1>
+        </div>
+        <div class="save-section">
+          <i
+            [ngClass]="{
+              saved: bourbonRef.isSaved,
+              'red-class': !bourbonRef.isSaved
+            }"
+            class="fas fa-bookmark"
+            (click)="toggleSaved(bourbonRef)"
+          ></i>
+        </div>
+      </div>
+      <div class="right">
+        <div class="right-details"></div>
+      </div>
+    </div>
+    <div class="inside">
+      <div class="icon"><i class="fas fa-info-circle"></i></div>
+      <div class="contents">
+        <table class="table">
+          <tr>
+            <th>Distillery</th>
+            <th>Proof</th>
+          </tr>
+          <tr>
+            <td>{{ bourbonRef.brand }}</td>
+            <td>{{ bourbonRef.proof }}</td>
+          </tr>
+          <tr>
+            <th>Tasting Notes</th>
+          </tr>
+          <tr>
+            <td>
+              {{ bourbonRef.description }}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
