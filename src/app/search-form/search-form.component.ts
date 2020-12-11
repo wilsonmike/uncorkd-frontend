@@ -20,5 +20,6 @@ export class SearchFormComponent implements OnInit {
         term: form.value.search,
       },
     });
+    form.reset();
   };
 }

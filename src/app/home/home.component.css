@@ -48,7 +48,7 @@ img {
 }
 .main-top {
   background-color: #ffd984;
-  height: 60%;
+  height: 70%;
 }
 .branding {
   font-family: "Amaranth", sans-serif;
@@ -67,6 +67,8 @@ img {
 }
 
 .welcome {
+  display: flex;
+  flex-direction: column;
   color: #fff7ed;
   font-family: "Amaranth", sans-serif;
   font-size: 30px;
@@ -78,12 +80,28 @@ img {
   align-items: center;
   padding: 10px;
 }
+.new-lander {
+  font-family: "Amaranth", sans-serif;
+  height: 40px;
+  width: 150px;
+  background-color: #f9f7ed;
+  border-radius: 20px;
+  border: none;
+  color: #f8d983;
+  outline: none;
+  border: none;
+}
+.new-lander:hover {
+  background-color: #ffb954;
+  color: white;
+  cursor: pointer;
+}
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
-  width: 150px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   padding: 10px;
 }
@@ -135,4 +153,54 @@ img {
   height: 40px;
   width: 80%;
   font-size: 10px;
+}
+.slider {
+  height: 10px;
+  width: 50%;
+  outline: none;
+  border: none;
+  margin-bottom: 5px;
+}
+.p-padded {
+  font-size: 12px;
+}
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="range"] {
+    overflow: hidden;
+    width: 90px;
+    -webkit-appearance: none;
+    background-color: #9a905d;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #fff7ed;
+    margin-top: -1px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: grabbing;
+    background: #ffd984;
+    box-shadow: -80px 0 0 80px #fff7ed;
+  }
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: #fff7ed;
+}
+input[type="range"]::-moz-range-track {
+  background-color: #9a905d;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #fff7ed;
+}
+input[type="range"]::-ms-fill-upper {
+  background-color: #9a905d;
 }

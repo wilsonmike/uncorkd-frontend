@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
 
   getBourbons = (term: string) => {
     this.service.getBourbons(term).subscribe((response) => {
-      console.log(response);
+      this.bourbons = response;
     });
   };
 
@@ -44,6 +44,7 @@ export class HomeComponent implements OnInit {
     this.service.getFlavors(flavor).subscribe((response) => {
       this.bourbons = response;
     });
+    console.log(this.bourbons);
   };
 
   editSaved = (saved: Saved): void => {
@@ -68,9 +69,9 @@ export class HomeComponent implements OnInit {
     autoplayTimeout: 2000,
     autoplayHoverPause: true,
     loop: true,
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: true,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
     dots: false,
     navSpeed: 600,
     navText: ['', ''],
