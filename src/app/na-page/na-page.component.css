@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  background-color: #f1dca7;
+  font-family: "Amaranth", sans-serif;
+}
+.logo {
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+}
+
+.main-container {
+  margin: 0;
+  padding: 0;
+  background-color: #f1dca7;
+  height: 100vh;
+}
+.content-container {
+  background-color: #d9ae94;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.paragraph {
+  padding: 0;
+  margin: 0;
+  font-family: "Amaranth", sans-serif;
+  font-size: 30px;
+}
+.shpeil {
+  width: 50%;
+}
+
+.card {
+  background-color: #9b9b7a;
+  display: inline-block;
+  height: 100%;
+  width: auto;
+  border: 2px solid black;
+  margin: 5px;
+}
+.one {
+  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tc-mocktails-1219-1576527575.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*);
+}
+.two {
+  background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2019%2F07%2Fwise-guy-XL-COCKTAIL2016_0.jpg&w=426&h=285&c=sc&poi=%5B600%2C600%5D&q=85);
+}
+.three {
+  background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2017%2F09%2Fwassail-XL-RECIPE2016.jpg&w=426&h=285&c=sc&poi=%5B500%2C500%5D&q=85);
+}
+.four {
+  background-image: url(https://mixthatdrink.com/wp-content/uploads/2014/11/mockmosa-735x1103.jpg);
+}
+.five {
+  width: fit-content;
+  background-image: url(https://cdn.tasteatlas.com/images/ingredients/5daf4319e5df41f180f23a8281987b28.jpg?w=905&h=510);
+}
+.grow {
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  height: 49px;
+  width: 22%;
+  margin: 5px 1% 5px 1%;
+  float: left;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  text-align: center;
+  overflow: hidden;
+}
+.grow:hover {
+  height: 200px;
+  width: 500px;
+}
