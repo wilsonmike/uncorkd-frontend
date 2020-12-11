@@ -48,4 +48,15 @@ export class ServiceService {
   getSaved = () => {
     return this.saved;
   };
+
+  getPost = (bourbon_id: number, username: string, rate: number): any => {
+    console.log(bourbon_id, username, rate);
+    return this.http.post(`${this.baseUrl}/bourbons`, {
+      params: {
+        bourbon_id: bourbon_id,
+        username: username,
+        rate: rate,
+      },
+    });
+  };
 }

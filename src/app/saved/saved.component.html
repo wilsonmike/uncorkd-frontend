@@ -13,13 +13,14 @@
   <img src="{{ save.img_url }}" alt="Picture of Bourbon" />
   <li>{{ save.brand }}</li>
   <li>{{ save.description }}</li>
-  <form>
+  <form #youMad="ngForm" (ngSubmit)="storeRate(youMad)">
     <input
       type="radio"
       class="star-input"
       name="{{ save.id }}"
       id="{{ save.id }}1"
       value="1"
+      ngModel
     />
     <label for="{{ save.id }}1" class="star"><i class="fas fa-star"></i></label>
     <input
@@ -28,6 +29,7 @@
       name="{{ save.id }}"
       id="{{ save.id }}2"
       value="2"
+      ngModel
     />
     <label for="{{ save.id }}2" class="star"><i class="fas fa-star"></i></label>
     <input
@@ -36,6 +38,7 @@
       name="{{ save.id }}"
       id="{{ save.id }}3"
       value="3"
+      ngModel
     />
     <label for="{{ save.id }}3" class="star"><i class="fas fa-star"></i></label>
     <input
@@ -44,6 +47,7 @@
       name="{{ save.id }}"
       id="{{ save.id }}4"
       value="4"
+      ngModel
     />
     <label for="{{ save.id }}4" class="star"><i class="fas fa-star"></i></label>
     <input
@@ -53,18 +57,19 @@
       id="{{ save.id }}5"
       value="5"
       checked
+      ngModel
     />
     <label for="{{ save.id }}5" class="star"><i class="fas fa-star"></i></label>
-    <ng-container *ngIf="user$ | async as user; else loginButtonContainer">
-      <button mat-icon-button>
-        <mat-icon matTooltip="Create" aria-hidden="false" aria-label="Create">
-          backup
-        </mat-icon>
-      </button>
-      <app-profile-card [user]="user" (logoutClick)="logout()">
-      </app-profile-card>
-      {{ user.uid }}
-    </ng-container>
-    <button (click)="getUser()" class="submit-star">Send</button>
+    <button>Rate</button>
   </form>
+  <ng-container *ngIf="user$ | async as user; else loginButtonContainer">
+    <app-profile-card [user]="user" (logoutClick)="logout()">
+    </app-profile-card>
+    <button
+      (click)="getUser(save.id, user.uid, storeRate())"
+      class="submit-star"
+    >
+      Save Rating
+    </button>
+  </ng-container>
 </ul>

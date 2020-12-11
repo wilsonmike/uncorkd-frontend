@@ -4,6 +4,7 @@ import { ServiceService } from '../service.service';
 import { Observable, of, Subject } from 'rxjs';
 import firebase from 'firebase/app';
 import { AuthService } from '../services/auth/auth.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-saved',
@@ -31,12 +32,17 @@ export class SavedComponent implements OnInit {
     this.saved = this.service.getSaved();
   };
 
-  getUser = () => {
-    console.log();
+  getUser = (bourbon_id: number, username: string, rate: number) => {
+    return this.service.getPost(bourbon_id, username, rate);
   };
 
   removeSaved = (saved: Saved) => {
     this.service.editSaved(saved);
     this.getSaved;
+  };
+
+  storeRate = (form: NgForm) => {
+    console.log(form.value);
+    return form.value;
   };
 }
