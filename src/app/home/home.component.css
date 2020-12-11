@@ -98,6 +98,7 @@ img {
 
 .card-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 100px;
