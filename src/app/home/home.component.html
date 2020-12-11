@@ -10,7 +10,9 @@
   </header>
   <div class="welcome">
     <p>Welcome to UnCorkd, let us take you to flavor town.</p>
+    <button routerLink="/newbie" class="new-lander">New to UnCorkd?</button>
   </div>
+
   <div style="text-align: center">
     <owl-carousel-o [options]="customOptions">
       <ng-template carouselSlide
@@ -21,6 +23,19 @@
             </div>
             <div class="flip-card-back">
               <h1>Honey</h1>
+              <p class="p-padded">
+                Max Proof <span class="slide">...just slide</span>
+              </p>
+              <input
+                class="slider"
+                type="range"
+                min="50"
+                max="180"
+                name="calories"
+                oninput="this.nextElementSibling.value = this.value"
+                ngModel
+              />
+              <output></output>
               <button mat-raised-button (click)="getFlavors('honey')">
                 Get Suggestion
               </button>
@@ -36,6 +51,19 @@
             </div>
             <div class="flip-card-back">
               <h1>Coffee</h1>
+              <p class="p-padded">
+                Max Proof <span class="slide">...just slide</span>
+              </p>
+              <input
+                class="slider"
+                type="range"
+                min="50"
+                max="180"
+                name="calories"
+                oninput="this.nextElementSibling.value = this.value"
+                ngModel
+              />
+              <output></output>
               <button mat-raised-button (click)="getFlavors('coffee')">
                 Get Suggestion
               </button>
@@ -51,6 +79,19 @@
             </div>
             <div class="flip-card-back">
               <h1>Tobacco</h1>
+              <p class="p-padded">
+                Max Proof <span class="slide">...just slide</span>
+              </p>
+              <input
+                class="slider"
+                type="range"
+                min="50"
+                max="180"
+                name="calories"
+                oninput="this.nextElementSibling.value = this.value"
+                ngModel
+              />
+              <output></output>
               <button mat-raised-button (click)="getFlavors('tobacco')">
                 Get Suggestion
               </button>
@@ -66,6 +107,19 @@
             </div>
             <div class="flip-card-back">
               <h1>Chocolate</h1>
+              <p class="p-padded">
+                Max Proof <span class="slide">...just slide</span>
+              </p>
+              <input
+                class="slider"
+                type="range"
+                min="50"
+                max="180"
+                name="calories"
+                oninput="this.nextElementSibling.value = this.value"
+                ngModel
+              />
+              <output></output>
               <button mat-raised-button (click)="getFlavors('chocolate')">
                 Get Suggestion
               </button>
@@ -81,6 +135,19 @@
             </div>
             <div class="flip-card-back">
               <h1>Vanilla</h1>
+              <p class="p-padded">
+                Max Proof <span class="slide">...just slide</span>
+              </p>
+              <input
+                class="slider"
+                type="range"
+                min="50"
+                max="180"
+                name="calories"
+                oninput="this.nextElementSibling.value = this.value"
+                ngModel
+              />
+              <output></output>
               <button mat-raised-button (click)="getFlavors('vanilla')">
                 Get Suggestion
               </button>

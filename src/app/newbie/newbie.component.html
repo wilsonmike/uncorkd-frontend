@@ -1,0 +1,84 @@
+<header class="header">
+  <img class="logo" src="assets/cork-icons.svg" alt="UnCorKd Logo" />
+  <a class="home" routerLink="/home">Home</a>
+  <app-headerauth class="header-auth"></app-headerauth>
+</header>
+<div style="text-align: center">
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide
+      ><div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="honey" src="assets/dictionary.svg" alt="Avatar" />
+          </div>
+          <div class="flip-card-back">
+            <h1>Honey</h1>
+            <button mat-raised-button (click)="getFlavors('honey')">
+              Get Suggestion
+            </button>
+          </div>
+        </div>
+      </div></ng-template
+    >
+    <ng-template carouselSlide>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="honey" src="assets/coffee-bean.svg" alt="Avatar" />
+          </div>
+          <div class="flip-card-back">
+            <h1>Coffee</h1>
+            <button mat-raised-button (click)="getFlavors('coffee')">
+              Get Suggestion
+            </button>
+          </div>
+        </div>
+      </div></ng-template
+    >
+    <ng-template carouselSlide
+      ><div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="honey" src="assets/tobacco.svg" alt="Avatar" />
+          </div>
+          <div class="flip-card-back">
+            <h1>Tobacco</h1>
+            <button mat-raised-button (click)="getFlavors('tobacco')">
+              Get Suggestion
+            </button>
+          </div>
+        </div>
+      </div></ng-template
+    >
+    <ng-template carouselSlide>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="honey" src="assets/chocolate-bar.svg" alt="Avatar" />
+          </div>
+          <div class="flip-card-back">
+            <h1>Chocolate</h1>
+            <button mat-raised-button (click)="getFlavors('chocolate')">
+              Get Suggestion
+            </button>
+          </div>
+        </div>
+      </div></ng-template
+    >
+    <ng-template carouselSlide
+      ><div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="honey" src="assets/ice-cream.svg" alt="Avatar" />
+          </div>
+          <div class="flip-card-back">
+            <h1>Vanilla</h1>
+            <button mat-raised-button (click)="getFlavors('vanilla')">
+              Get Suggestion
+            </button>
+          </div>
+        </div>
+      </div></ng-template
+    >
+  </owl-carousel-o>
+</div>

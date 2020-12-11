@@ -4,6 +4,7 @@ import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component
 import { HomeComponent } from './home/home.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NaPageComponent } from './na-page/na-page.component';
+import { NewbieComponent } from './newbie/newbie.component';
 import { SavedComponent } from './saved/saved.component';
 import { SubmitBourbonComponent } from './submit-bourbon/submit-bourbon.component';
 
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'four-zero-four', component: FourZeroFourComponent },
   { path: 'submit-bourbon', component: SubmitBourbonComponent },
   { path: 'saved', component: SavedComponent },
+  { path: 'newbie', component: NewbieComponent },
   { path: 'na-page', component: NaPageComponent },
   { path: '', redirectTo: '/landing-page', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: FourZeroFourComponent }, // Wildcard route for a 404 page
