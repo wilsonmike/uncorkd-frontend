@@ -48,9 +48,29 @@ img {
   border: none;
   outline: none;
   background: #ffd984;
-  height: 30px;
-  padding: 5px;
+  height: 35px;
+  margin-top: 5px;
   margin-left: 10px;
   border-radius: 5px;
   color: white;
+}
+.rate-btn {
+  border: none;
+  outline: none;
+  background: #ffd984;
+  height: 35px;
+  margin-left: 10px;
+  border-radius: 5px;
+  color: white;
+}
+.rate-btn:hover {
+  background-color: #ffb954;
+  color: white;
+  cursor: pointer;
+}
+
+.submit-star:hover {
+  background-color: #ffb954;
+  color: white;
+  cursor: pointer;
 }
