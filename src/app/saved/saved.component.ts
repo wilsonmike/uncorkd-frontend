@@ -12,7 +12,8 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./saved.component.css'],
 })
 export class SavedComponent implements OnInit {
-  rank = '';
+  rating = '';
+  isDisabled = false;
   user$: Observable<firebase.User> = this.authService.user$;
   @Input() bourbonRef: any;
   @Input() user: firebase.User;
@@ -33,8 +34,8 @@ export class SavedComponent implements OnInit {
     this.saved = this.service.getSaved();
   };
 
-  getUser = (bourbon_id: number, username: string, rate: number) => {
-    return this.service.getPost(bourbon_id, username, rate);
+  getUser = (bourbon_id: number, username: string, rating: number) => {
+    return this.service.getPost(bourbon_id, username, rating);
   };
 
   removeSaved = (saved: Saved) => {
@@ -43,7 +44,11 @@ export class SavedComponent implements OnInit {
   };
 
   storeRate = (form: NgForm) => {
-    this.rank = form.value;
+    console.log(form.value[1]);
+    this.rating = form.value;
     return form.value;
+  };
+  disableButton = function () {
+    this.isDisabled = true;
   };
 }

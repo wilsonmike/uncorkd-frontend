@@ -65,7 +65,10 @@
   <ng-container *ngIf="user$ | async as user; else loginButtonContainer">
     <app-profile-card [user]="user" (logoutClick)="logout()">
     </app-profile-card>
-    <button (click)="getUser(save.id, user.uid, rank)" class="submit-star">
+    <button
+      (click)="getUser(save.id, user.uid, rating[save.id])"
+      class="submit-star"
+    >
       Save Rating
     </button>
   </ng-container>

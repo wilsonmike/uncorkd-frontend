@@ -11,6 +11,7 @@ import { Saved } from './interfaces/saved';
 export class ServiceService {
   baseUrl: string = 'http://localhost:3000';
   saved: Saved[] = [];
+
   constructor(private router: Router, private http: HttpClient) {}
 
   getTrending = (): any => {
@@ -49,14 +50,24 @@ export class ServiceService {
     return this.saved;
   };
 
-  getPost = (bourbon_id: number, username: string, rate: number): any => {
-    console.log(bourbon_id, username, rate);
-    return this.http.post(`${this.baseUrl}/bourbons`, {
-      params: {
-        bourbon_id: bourbon_id,
-        username: username,
-        rate: rate,
-      },
-    });
+  getPost = (bourbon_id: any, username: any, rating: any): any => {
+    const data = {
+      bourbon_id: parseInt(bourbon_id),
+      username: username,
+      rating: parseInt(rating),
+    };
+    console.log(bourbon_id, username, rating);
+    return this.http
+      .post(`${this.baseUrl}/bourbons`, data)
+      .subscribe((response) => {
+        console.log(response);
+      });
   };
+
+  // addPerson(person:Person): Observable<any> {
+  //   const headers = { 'content-type': 'application/json'}
+  //   const body=JSON.stringify(person);
+  //   console.log(body)
+  //   return this.http.post(this.baseURL + 'people', body,{'headers':headers})
+  // }
 }
