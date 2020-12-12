@@ -12,6 +12,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./saved.component.css'],
 })
 export class SavedComponent implements OnInit {
+  rank = '';
   user$: Observable<firebase.User> = this.authService.user$;
   @Input() bourbonRef: any;
   @Input() user: firebase.User;
@@ -42,7 +43,7 @@ export class SavedComponent implements OnInit {
   };
 
   storeRate = (form: NgForm) => {
-    console.log(form.value);
+    this.rank = form.value;
     return form.value;
   };
 }
