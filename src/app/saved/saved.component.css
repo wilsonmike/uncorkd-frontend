@@ -18,8 +18,11 @@
 .header-group {
   margin-left: auto;
 }
-.search-bar {
+
+textarea {
+  resize: none;
 }
+
 .home {
   font-size: 16px;
   text-decoration: none;
@@ -73,4 +76,9 @@ img {
   background-color: #ffb954;
   color: white;
   cursor: pointer;
+}
+
+.form-ish {
+  display: flex;
+  flex-direction: column;
 }
