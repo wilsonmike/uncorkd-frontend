@@ -85,7 +85,8 @@ img {
   flex-direction: column;
 }
 .txt-area {
-  width: 50%;
+  width: 400px;
+  border: none;
 }
 .brb-container {
   display: flex;
@@ -105,5 +106,5 @@ img {
 }
 .d-wrapper {
   text-align: left;
-  width: 20%;
+  width: 400px;
 }
