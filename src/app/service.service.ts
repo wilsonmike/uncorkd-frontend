@@ -54,9 +54,9 @@ export class ServiceService {
     bourbon_id: any,
     username: any,
     rating: any,
-    displayName: any,
-    brand: any,
-    img_url: any
+    displayName: string,
+    brand: string,
+    imgURL: string
   ): any => {
     const data = {
       bourbon_id: parseInt(bourbon_id),
@@ -64,7 +64,7 @@ export class ServiceService {
       rating: parseInt(rating),
       displayName: displayName,
       brand: brand,
-      img_url: img_url,
+      imgURL: imgURL,
     };
     console.log(bourbon_id, username, rating);
     return this.http

@@ -80,5 +80,31 @@ img {
 
 .form-ish {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+}
+.txt-area {
+  width: 400px;
+  border: none;
+}
+.brb-container {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.b-brand {
+  font-family: "Amaranth", sans-serif;
+  font-size: 20px;
+}
+.b-container {
+  font-family: "Amaranth", sans-serif;
+  font-size: 14px;
+}
+.d-wrapper {
+  text-align: left;
+  width: 400px;
 }

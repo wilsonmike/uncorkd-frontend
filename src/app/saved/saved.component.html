@@ -9,10 +9,12 @@
   <a class="home" routerLink="/home">Home</a>
   <app-headerauth class="header-auth"></app-headerauth>
 </header>
-<ul *ngFor="let save of saved">
+<ul class="brb-container" *ngFor="let save of saved">
   <img src="{{ save.img_url }}" alt="Picture of Bourbon" />
-  <li>{{ save.brand }}</li>
-  <li>{{ save.description }}</li>
+  <div class="d-wrapper">
+    <li class="b-brand">{{ save.brand }}</li>
+    <li class="b-description">{{ save.description }}</li>
+  </div>
   <form #youMad="ngForm" (ngSubmit)="storeRate(youMad)" class="form-ish">
     <div>
       <input
@@ -73,33 +75,35 @@
       ></label>
     </div>
     <textarea
+      class="txt-area"
       name="comment"
       id="comment"
-      rows="4"
+      rows="2"
       cols="50"
       placeholder="Add a comment here!"
-    >
-    </textarea>
-    <button mat-button class="rate-btn">Rate</button>
+    ></textarea>
+    <div>
+      <button mat-button class="rate-btn">Rate</button>
+      <ng-container *ngIf="user$ | async as user; else loginButtonContainer">
+        <button
+          mat-button
+          (click)="
+            getUser(
+              save.id,
+              user.uid,
+              rating[save.id],
+              user.displayName,
+              save.brand,
+              save.img_url
+            )
+          "
+          class="submit-star"
+        >
+          Save Rating
+        </button>
+        <app-profile-card [user]="user" (logoutClick)="logout()">
+        </app-profile-card>
+      </ng-container>
+    </div>
   </form>
-  <ng-container *ngIf="user$ | async as user; else loginButtonContainer">
-    <app-profile-card [user]="user" (logoutClick)="logout()">
-    </app-profile-card>
-    <button
-      mat-button
-      (click)="
-        getUser(
-          save.id,
-          user.uid,
-          rating[save.id],
-          user.displayName,
-          save.brand,
-          save.img_url
-        )
-      "
-      class="submit-star"
-    >
-      Save Rating
-    </button>
-  </ng-container>
 </ul>
