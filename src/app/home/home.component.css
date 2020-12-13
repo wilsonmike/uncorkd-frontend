@@ -211,3 +211,9 @@ input[type="range"]::-ms-fill-lower {
 input[type="range"]::-ms-fill-upper {
   background-color: #9a905d;
 }
+
+@media only screen and (min-width: 768px) {
+  .media-q-example {
+    color: #e5e6e4;
+  }
+}
