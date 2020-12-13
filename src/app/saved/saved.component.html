@@ -67,7 +67,16 @@
     </app-profile-card>
     <button
       mat-button
-      (click)="getUser(save.id, user.uid, rating[save.id])"
+      (click)="
+        getUser(
+          save.id,
+          user.uid,
+          rating[save.id],
+          user.displayName,
+          save.brand,
+          save.img_url
+        )
+      "
       class="submit-star"
     >
       Save Rating

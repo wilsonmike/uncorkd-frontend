@@ -34,8 +34,22 @@ export class SavedComponent implements OnInit {
     this.saved = this.service.getSaved();
   };
 
-  getUser = (bourbon_id: number, username: string, rating: number) => {
-    return this.service.getPost(bourbon_id, username, rating);
+  getUser = (
+    bourbon_id: number,
+    username: string,
+    rating: number,
+    displayName: string,
+    brand: string,
+    img_url: any
+  ): any => {
+    return this.service.getPost(
+      bourbon_id,
+      username,
+      rating,
+      displayName,
+      brand,
+      img_url
+    );
   };
 
   removeSaved = (saved: Saved) => {

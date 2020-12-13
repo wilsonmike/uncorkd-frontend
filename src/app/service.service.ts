@@ -50,11 +50,21 @@ export class ServiceService {
     return this.saved;
   };
 
-  getPost = (bourbon_id: any, username: any, rating: any): any => {
+  getPost = (
+    bourbon_id: any,
+    username: any,
+    rating: any,
+    displayName: any,
+    brand: any,
+    img_url: any
+  ): any => {
     const data = {
       bourbon_id: parseInt(bourbon_id),
       username: username,
       rating: parseInt(rating),
+      displayName: displayName,
+      brand: brand,
+      img_url: img_url,
     };
     console.log(bourbon_id, username, rating);
     return this.http
