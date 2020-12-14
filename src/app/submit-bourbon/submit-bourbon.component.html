@@ -1,28 +1,82 @@
-<div class="form-container">
-  <form #inputForm="ngForm">
-    <label for="brand">Brand Name</label>
-    <input
-      type="text"
-      name="brand"
-      id="brand"
-      placeholder="Insert brand name here!"
-      ngModel
-    />
-    <label for="distillery">Distillery</label>
-    <input type="text" name="distillery" id="distillery" ngModel />
-    <label for="proof">Proof</label>
-    <input type="number" step="0.01" name="proof" id="proof" ngModel />
-    <label for="description">Description / Tasting Notes</label>
-    <textarea
-      form="inputForm"
-      name="description"
-      id="description"
-      cols="30"
-      rows="10"
-      ngModel
-    ></textarea>
-    <label for="imageUrl">Image URL</label>
-    <input type="text" name="imageUrl" id="imageUrl" ngModel />
-    <button>Submit</button>
-  </form>
+<div class="main-top">
+  <header class="header">
+    <img class="logo" src="assets/cork-icons.svg" alt="UnCorKd Logo" />
+    <!-- <h3 class="ranked">Ranked</h3> -->
+    <a class="saved" routerLink="/saved">Saved</a>
+    <a class="feed" routerLink="/feed">Feed</a>
+    <app-headerauth class="header-auth"></app-headerauth>
+  </header>
+
+  <body>
+    <div class="main-block">
+      <div class="left-part">
+        <img
+          class="form-icon cork"
+          src="/assets/cork-icons.svg"
+          alt="cork icons"
+        />
+        <img
+          class="form-icon whisky"
+          src="/assets/whisky.svg"
+          alt="whisky glass icon"
+        />
+        <img
+          class="form-icon barrel"
+          src="/assets/barrel.svg"
+          alt="barrel icon"
+        />
+      </div>
+      <form #inputForm="ngForm">
+        <h1>Submit a new bourbon!</h1>
+        <div class="info">
+          <label for="brand">Brand Name</label>
+          <input
+            type="text"
+            name="brand"
+            id="brand"
+            placeholder="Insert brand name here!"
+            ngModel
+          />
+          <label for="distillery">Distillery</label>
+          <input
+            type="text"
+            name="distillery"
+            id="distillery"
+            placeholder="Insert Distillery Name Here"
+            ngModel
+          />
+          <label for="proof">Proof</label>
+          <input
+            type="number"
+            step="0.01"
+            name="proof"
+            id="proof"
+            placeholder="Insert Proof Here!"
+            ngModel
+          />
+          <label for="imageUrl">Image URL</label>
+          <input
+            type="text"
+            name="imageUrl"
+            id="imageUrl"
+            placeholder="Insert Image URL Here!"
+            ngModel
+          />
+        </div>
+        <p>Description / Tasting Notes</p>
+        <div>
+          <textarea
+            form="inputForm"
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"
+            placeholder="Give a brief description of the whiskey, please provide tasting notes!"
+            ngModel
+          ></textarea>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
 </div>
