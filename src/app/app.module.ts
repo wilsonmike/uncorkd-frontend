@@ -12,6 +12,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSliderModule } from '@angular/material/slider';
 import { LandingPageComponent } from './landing-page/landing-page.component';
@@ -72,6 +73,7 @@ import { FeedComponent } from './feed/feed.component';
     MatTooltipModule,
     MatSnackBarModule,
     AppFirebaseModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

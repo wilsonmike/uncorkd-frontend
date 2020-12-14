@@ -39,3 +39,38 @@
   background-color: #ffd984;
   height: 5%;
 }
+ul {
+  list-style-type: none;
+}
+.fa-star {
+  color: gold;
+}
+.user-photo {
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+.item-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-brand {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.user-photo {
+  margin-left: auto;
+}
+.inside-content {
+  text-align: center;
+}
