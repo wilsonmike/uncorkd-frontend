@@ -9,6 +9,7 @@
   <a class="home" routerLink="/home">Home</a>
   <app-headerauth class="header-auth"></app-headerauth>
 </header>
+<div class="bourbon-container">
 <ul class="brb-container" *ngFor="let save of saved">
   <img src="{{ save.img_url }}" alt="Picture of Bourbon" />
   <div class="d-wrapper">
@@ -107,3 +108,4 @@
     </div>
   </form>
 </ul>
+</div>
