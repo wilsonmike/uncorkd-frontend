@@ -78,10 +78,7 @@ export class ServiceService {
       });
   };
 
-  // addPerson(person:Person): Observable<any> {
-  //   const headers = { 'content-type': 'application/json'}
-  //   const body=JSON.stringify(person);
-  //   console.log(body)
-  //   return this.http.post(this.baseURL + 'people', body,{'headers':headers})
-  // }
+  getFeed = () => {
+    return this.http.get(`${this.baseUrl}/feed`);
+  };
 }
