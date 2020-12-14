@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { FeedComponent } from './feed/feed.component';
 import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component';
 import { HomeComponent } from './home/home.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'saved', component: SavedComponent },
   { path: 'newbie', component: NewbieComponent },
   { path: 'na-page', component: NaPageComponent },
+  { path: 'feed', component: FeedComponent },
   { path: '', redirectTo: '/landing-page', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: FourZeroFourComponent }, // Wildcard route for a 404 page
 ];

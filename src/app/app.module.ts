@@ -27,6 +27,7 @@ import { HeaderauthComponent } from './headerauth/headerauth.component';
 import { ProfileCardComponent } from './profile-card/profile-card.component';
 import { CardComponent } from './card/card.component';
 import { NewbieComponent } from './newbie/newbie.component';
+import { FeedComponent } from './feed/feed.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { NewbieComponent } from './newbie/newbie.component';
     ProfileCardComponent,
     CardComponent,
     NewbieComponent,
+    FeedComponent,
   ],
   exports: [
     BrowserAnimationsModule,

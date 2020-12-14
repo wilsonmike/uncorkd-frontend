@@ -1,0 +1,25 @@
+<ul *ngFor="let item of userFeed">
+  <img src="{{ item.img_url }}" alt="Picture of Bourbon" />
+  <div>
+    <li>{{ item.brand }}</li>
+    <li *ngIf="item.rating === 1"><i class="fas fa-star"></i></li>
+    <li *ngIf="item.rating === 2">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i>
+    </li>
+    <li *ngIf="item.rating === 3">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i
+      ><i class="fas fa-star"></i>
+    </li>
+    <li *ngIf="item.rating === 4">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i
+      ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    </li>
+    <li *ngIf="item.rating === 5">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i
+      ><i class="fas fa-star"></i><i class="fas fa-star"></i
+      ><i class="fas fa-star"></i>
+    </li>
+    <li>{{ item.user_comment }}</li>
+    <img src="{{ item.photo_url }}" alt="Picture of Face" />
+  </div>
+</ul>

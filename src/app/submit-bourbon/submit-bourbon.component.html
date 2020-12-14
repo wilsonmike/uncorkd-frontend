@@ -1,1 +1,28 @@
-<p>submit-bourbon works!</p>
+<div class="form-container">
+  <form #inputForm="ngForm">
+    <label for="brand">Brand Name</label>
+    <input
+      type="text"
+      name="brand"
+      id="brand"
+      placeholder="Insert brand name here!"
+      ngModel
+    />
+    <label for="distillery">Distillery</label>
+    <input type="text" name="distillery" id="distillery" ngModel />
+    <label for="proof">Proof</label>
+    <input type="number" step="0.01" name="proof" id="proof" ngModel />
+    <label for="description">Description / Tasting Notes</label>
+    <textarea
+      form="inputForm"
+      name="description"
+      id="description"
+      cols="30"
+      rows="10"
+      ngModel
+    ></textarea>
+    <label for="imageUrl">Image URL</label>
+    <input type="text" name="imageUrl" id="imageUrl" ngModel />
+    <button>Submit</button>
+  </form>
+</div>
