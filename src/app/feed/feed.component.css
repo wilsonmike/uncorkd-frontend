@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+.header-auth {
+  margin-right: 20px;
+}
+.header-group {
+  margin-left: auto;
+}
+.saved {
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "Amaranth", sans-serif;
+  margin-right: 20px;
+  color: #fff7ed;
+}
+.home {
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "Amaranth", sans-serif;
+  margin-left: auto;
+  margin-right: 20px;
+  color: #fff7ed;
+}
+.ranked {
+  font-size: 14px;
+  font-family: "Amaranth", sans-serif;
+  margin-right: 20px;
+  color: #fff7ed;
+}
+.logo {
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+}
+.main-top {
+  background-color: #ffd984;
+  height: 5%;
+}
