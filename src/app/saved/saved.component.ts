@@ -13,6 +13,7 @@ import { NgForm } from '@angular/forms';
 })
 export class SavedComponent implements OnInit {
   rating = '';
+  user_comment = '';
   isDisabled = false;
   user$: Observable<firebase.User> = this.authService.user$;
   @Input() bourbonRef: any;
@@ -40,7 +41,9 @@ export class SavedComponent implements OnInit {
     rating: number,
     displayName: string,
     brand: string,
-    img_url: any
+    img_url: any,
+    photo_url: string,
+    user_comment: string
   ): any => {
     return this.service.getPost(
       bourbon_id,
@@ -48,7 +51,9 @@ export class SavedComponent implements OnInit {
       rating,
       displayName,
       brand,
-      img_url
+      img_url,
+      photo_url,
+      user_comment
     );
   };
 
@@ -58,8 +63,9 @@ export class SavedComponent implements OnInit {
   };
 
   storeRate = (form: NgForm) => {
-    console.log(form.value[1]);
+    console.log(form.value);
     this.rating = form.value;
+    this.user_comment = form.value;
     return form.value;
   };
   disableButton = function () {
