@@ -54,9 +54,11 @@ export class ServiceService {
     bourbon_id: any,
     username: any,
     rating: any,
-    displayName: string,
-    brand: string,
-    imgURL: string
+    displayName: any,
+    brand: any,
+    img_url: any,
+    photo_url: any,
+    user_comment: any
   ): any => {
     const data = {
       bourbon_id: parseInt(bourbon_id),
@@ -64,9 +66,11 @@ export class ServiceService {
       rating: parseInt(rating),
       displayName: displayName,
       brand: brand,
-      imgURL: imgURL,
+      img_url: img_url,
+      photo_url: photo_url,
+      user_comment: user_comment,
     };
-    console.log(bourbon_id, username, rating);
+    console.log(bourbon_id, username, rating, user_comment);
     return this.http
       .post(`${this.baseUrl}/bourbons`, data)
       .subscribe((response) => {

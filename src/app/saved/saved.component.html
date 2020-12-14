@@ -81,6 +81,7 @@
       rows="2"
       cols="50"
       placeholder="Add a comment here!"
+      ngModel
     ></textarea>
     <div>
       <button mat-button class="rate-btn">Rate</button>
@@ -94,7 +95,9 @@
               rating[save.id],
               user.displayName,
               save.brand,
-              save.img_url
+              save.img_url,
+              user.photoURL,
+              user_comment.comment
             )
           "
           class="submit-star"
