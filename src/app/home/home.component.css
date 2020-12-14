@@ -107,8 +107,8 @@ img {
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
-  width: 200px;
-  height: 200px;
+  width: 125px;
+  height: 125px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   padding: 10px;
 }
@@ -212,8 +212,19 @@ input[type="range"]::-ms-fill-upper {
   background-color: #9a905d;
 }
 
+@media only screen and (min-width: 370px) {
+}
+
 @media only screen and (min-width: 768px) {
-  .media-q-example {
-    color: #e5e6e4;
+  .flip-card {
+    width: 200px;
+    height: 200px;
   }
+
+  .card-container {
+    padding: 25px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
 }
