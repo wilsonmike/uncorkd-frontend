@@ -7,108 +7,109 @@
   />
   <!-- <h3 class="ranked">Ranked</h3> -->
   <a class="home" routerLink="/home">Home</a>
+  <a class="feed" routerLink="/feed">Feed</a>
   <app-headerauth class="header-auth"></app-headerauth>
 </header>
 <div class="bourbon-container">
-<ul class="brb-container" *ngFor="let save of saved">
-  <img src="{{ save.img_url }}" alt="Picture of Bourbon" />
-  <div class="d-wrapper">
-    <li class="b-brand">{{ save.brand }}</li>
-    <li class="b-description">{{ save.description }}</li>
-  </div>
-  <form #youMad="ngForm" (ngSubmit)="storeRate(youMad)" class="form-ish">
-    <div>
-      <input
-        type="radio"
-        class="star-input"
-        name="{{ save.id }}"
-        id="{{ save.id }}1"
-        value="1"
-        ngModel
-      />
-      <label for="{{ save.id }}1" class="star"
-        ><i class="fas fa-star"></i
-      ></label>
-      <input
-        type="radio"
-        class="star-input"
-        name="{{ save.id }}"
-        id="{{ save.id }}2"
-        value="2"
-        ngModel
-      />
-      <label for="{{ save.id }}2" class="star"
-        ><i class="fas fa-star"></i
-      ></label>
-      <input
-        type="radio"
-        class="star-input"
-        name="{{ save.id }}"
-        id="{{ save.id }}3"
-        value="3"
-        ngModel
-      />
-      <label for="{{ save.id }}3" class="star"
-        ><i class="fas fa-star"></i
-      ></label>
-      <input
-        type="radio"
-        class="star-input"
-        name="{{ save.id }}"
-        id="{{ save.id }}4"
-        value="4"
-        ngModel
-      />
-      <label for="{{ save.id }}4" class="star"
-        ><i class="fas fa-star"></i
-      ></label>
-      <input
-        type="radio"
-        class="star-input"
-        name="{{ save.id }}"
-        id="{{ save.id }}5"
-        value="5"
-        checked
-        ngModel
-      />
-      <label for="{{ save.id }}5" class="star"
-        ><i class="fas fa-star"></i
-      ></label>
+  <ul class="brb-container" *ngFor="let save of saved">
+    <img src="{{ save.img_url }}" alt="Picture of Bourbon" />
+    <div class="d-wrapper">
+      <li class="b-brand">{{ save.brand }}</li>
+      <li class="b-description">{{ save.description }}</li>
     </div>
-    <textarea
-      class="txt-area"
-      name="comment"
-      id="comment"
-      rows="2"
-      cols="50"
-      placeholder="Add a comment here!"
-      ngModel
-    ></textarea>
-    <div>
-      <button mat-button class="rate-btn">Rate</button>
-      <ng-container *ngIf="user$ | async as user; else loginButtonContainer">
-        <button
-          mat-button
-          (click)="
-            getUser(
-              save.id,
-              user.uid,
-              rating[save.id],
-              user.displayName,
-              save.brand,
-              save.img_url,
-              user.photoURL,
-              user_comment.comment
-            )
-          "
-          class="submit-star"
-        >
-          Save Rating
-        </button>
-        <app-profile-card [user]="user" (logoutClick)="logout()">
-        </app-profile-card>
-      </ng-container>
-    </div>
-  </form>
-</ul>
+    <form #youMad="ngForm" (ngSubmit)="storeRate(youMad)" class="form-ish">
+      <div>
+        <input
+          type="radio"
+          class="star-input"
+          name="{{ save.id }}"
+          id="{{ save.id }}1"
+          value="1"
+          ngModel
+        />
+        <label for="{{ save.id }}1" class="star"
+          ><i class="fas fa-star"></i
+        ></label>
+        <input
+          type="radio"
+          class="star-input"
+          name="{{ save.id }}"
+          id="{{ save.id }}2"
+          value="2"
+          ngModel
+        />
+        <label for="{{ save.id }}2" class="star"
+          ><i class="fas fa-star"></i
+        ></label>
+        <input
+          type="radio"
+          class="star-input"
+          name="{{ save.id }}"
+          id="{{ save.id }}3"
+          value="3"
+          ngModel
+        />
+        <label for="{{ save.id }}3" class="star"
+          ><i class="fas fa-star"></i
+        ></label>
+        <input
+          type="radio"
+          class="star-input"
+          name="{{ save.id }}"
+          id="{{ save.id }}4"
+          value="4"
+          ngModel
+        />
+        <label for="{{ save.id }}4" class="star"
+          ><i class="fas fa-star"></i
+        ></label>
+        <input
+          type="radio"
+          class="star-input"
+          name="{{ save.id }}"
+          id="{{ save.id }}5"
+          value="5"
+          checked
+          ngModel
+        />
+        <label for="{{ save.id }}5" class="star"
+          ><i class="fas fa-star"></i
+        ></label>
+      </div>
+      <textarea
+        class="txt-area"
+        name="comment"
+        id="comment"
+        rows="2"
+        cols="50"
+        placeholder="Add a comment here!"
+        ngModel
+      ></textarea>
+      <div>
+        <button mat-button class="rate-btn">Rate</button>
+        <ng-container *ngIf="user$ | async as user; else loginButtonContainer">
+          <button
+            mat-button
+            (click)="
+              getUser(
+                save.id,
+                user.uid,
+                rating[save.id],
+                user.displayName,
+                save.brand,
+                save.img_url,
+                user.photoURL,
+                user_comment.comment
+              )
+            "
+            class="submit-star"
+          >
+            Save Rating
+          </button>
+          <app-profile-card [user]="user" (logoutClick)="logout()">
+          </app-profile-card>
+        </ng-container>
+      </div>
+    </form>
+  </ul>
 </div>
