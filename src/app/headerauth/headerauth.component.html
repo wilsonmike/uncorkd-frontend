@@ -1,7 +1,12 @@
 <div class="heady">
   <ng-container *ngIf="user$ | async as user; else loginButtonContainer">
     <button mat-icon-button>
-      <mat-icon matTooltip="Create" aria-hidden="false" aria-label="Create">
+      <mat-icon
+        routerLink="/submit-bourbon"
+        matTooltip="Create"
+        aria-hidden="false"
+        aria-label="Create"
+      >
         backup
       </mat-icon>
     </button>
