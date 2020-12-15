@@ -9,7 +9,7 @@ export class NewbieComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-
+  panelOpenState = false;
   customOptions: any = {
     autoplayHoverPause: true,
     loop: true,
