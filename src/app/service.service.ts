@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Saved } from './interfaces/saved';
+import { ProfileCardComponent } from './profile-card/profile-card.component';
 
 @Injectable({
   providedIn: 'root',
@@ -26,10 +27,11 @@ export class ServiceService {
     });
   };
 
-  getFlavors = (flavor: string): any => {
+  getFlavors = (flavor: string, proof: string): any => {
     return this.http.get(`${this.baseUrl}/flavor`, {
       params: {
         flavor: flavor,
+        proof: proof,
       },
     });
   };
