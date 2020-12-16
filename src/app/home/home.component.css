@@ -56,6 +56,10 @@ img {
   background-color: #ffd984;
   height: 70%;
 }
+
+.footer {
+  position: relative;
+}
 .branding {
   font-family: "Amaranth", sans-serif;
   font-size: 20px;

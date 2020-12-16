@@ -1,6 +1,11 @@
 <div class="main-top">
   <header class="header">
-    <img class="logo" src="assets/cork-icons.svg" alt="UnCorKd Logo" />
+    <img
+      class="logo"
+      routerLink="/home"
+      src="assets/cork-icons.svg"
+      alt="UnCorKd Logo"
+    />
     <!-- <h3 class="ranked">Ranked</h3> -->
     <a class="saved" routerLink="/saved">Saved</a>
     <a class="feed" routerLink="/feed">Feed</a>
@@ -27,7 +32,7 @@
         />
       </div>
       <form #inputForm="ngForm">
-        <h1>Submit a new bourbon!</h1>
+        <h1>Submit a New Bourbon!</h1>
         <div class="info">
           <label for="brand">Brand Name</label>
           <input
@@ -80,3 +85,5 @@
     </div>
   </body>
 </div>
+
+<app-footer></app-footer>

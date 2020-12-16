@@ -30,6 +30,7 @@ import { ProfileCardComponent } from './profile-card/profile-card.component';
 import { CardComponent } from './card/card.component';
 import { NewbieComponent } from './newbie/newbie.component';
 import { FeedComponent } from './feed/feed.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { FeedComponent } from './feed/feed.component';
     CardComponent,
     NewbieComponent,
     FeedComponent,
+    FooterComponent,
   ],
   exports: [
     BrowserAnimationsModule,
