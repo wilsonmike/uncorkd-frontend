@@ -27,18 +27,23 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  height: 50%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .paragraph {
-  padding: 0;
+  padding: 10px;
   margin: 0;
   font-family: "Amaranth", sans-serif;
   font-size: 30px;
 }
 .shpeil {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #fadb99;
   width: 50%;
+  margin-bottom: 100px;
 }
 .header-link {
   text-decoration: none;
