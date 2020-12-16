@@ -12,6 +12,7 @@ import { ServiceService } from '../service.service';
 export class HomeComponent implements OnInit {
   bourbons = [];
   saved: Saved[] = [];
+  proof = '';
 
   constructor(private service: ServiceService, private route: ActivatedRoute) {}
 
@@ -40,9 +41,20 @@ export class HomeComponent implements OnInit {
     });
   };
 
+  getSliderValue = (event) => {
+    console.log(event.target.value);
+    this.proof = event.target.value;
+    console.log(this.proof);
+  };
+
+  resetProof = () => {
+    this.proof = '200';
+  };
+
   getFlavors = (flavor: string) => {
     console.log('clicked');
-    this.service.getFlavors(flavor).subscribe((response) => {
+    console.log(this.proof);
+    this.service.getFlavors(flavor, this.proof).subscribe((response) => {
       this.bourbons = response;
     });
     console.log(this.bourbons);
