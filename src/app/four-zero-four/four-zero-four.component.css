@@ -2,10 +2,32 @@
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-
+  align-items: center;
   background-color: #e4af38;
+  font-family: "Amaranth", sans-serif;
+}
+
+.header {
+  background-color: hsl(42, 76%, 56%);
+  font-family: "Amaranth", sans-serif;
+  font-size: 30px;
 }
 
 .gif {
+  border: 2px solid black;
+  width: 480px;
+  height: 480px;
+}
+
+.paragraph {
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-content {
+    display: flex;
+    flex-direction: row;
+  }
 }
