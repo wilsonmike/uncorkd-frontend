@@ -3,10 +3,16 @@
   font-size: 15px;
   line-height: 20px;
   color: #737373;
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
   width: 100%;
 }
+
+/* .container {
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+} */
 
 .row {
   display: flex;
