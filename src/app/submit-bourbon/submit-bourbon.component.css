@@ -15,7 +15,7 @@ body {
 h1 {
   margin: 0 0 20px;
   font-weight: 400;
-  color: #ffd984;
+  color: brown;
 }
 p {
   margin: 0 0 5px;
@@ -25,8 +25,9 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background: #ffd984;
+  min-height: 130%;
+  background: #ffe4a9;
+  position: relative;
 }
 form {
   padding: 25px;
@@ -34,6 +35,8 @@ form {
   box-shadow: 0 2px 5px #f5f5f5;
   background: #f5f5f5;
   border-radius: 20px;
+  color: brown;
+  width: 60%;
 }
 
 .cork {
@@ -64,14 +67,15 @@ button {
   width: 100%;
   padding: 10px;
   border: none;
+  border-radius: 20px;
   background: #ffd984;
   font-size: 16px;
   font-weight: 400;
   color: #fff;
 }
 button:hover {
-  color: #ffd984;
-  background: #fff;
+  color: brown;
+  background: #ffe4a9;
 }
 
 .main-top {
@@ -112,13 +116,13 @@ button:hover {
   margin-left: 20px;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 768px) {
   .main-block {
     flex-direction: row;
   }
   .left-part,
   form {
-    width: 50%;
+    width: 500px;
   }
   .cork {
     margin-top: 0;
