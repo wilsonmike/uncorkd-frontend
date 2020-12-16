@@ -1,3 +1,7 @@
+* {
+  font-family: "Amaranth", sans-serif;
+}
+
 .header {
   display: flex;
   height: 50px;
@@ -79,11 +83,11 @@
 }
 .info {
   width: 60%;
+  font-size: 20px;
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin-top: 10px;
-  margin: 10px auto;
+  margin: 3px auto;
 }
 .hero-info {
   text-align: center;
@@ -96,7 +100,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  padding: 50px;
+  padding: 60px;
   justify-content: center;
   background-position: center;
   align-items: center;
@@ -105,9 +109,19 @@
 .def-contain {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 50%;
+  margin: 20px auto;
 }
 .glass-img {
   height: 100px;
   width: 90px;
+}
+.divider {
+  width: 20%;
+  margin: 0 auto;
+}
+.t-img {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
 }
