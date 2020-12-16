@@ -22,10 +22,10 @@ p {
 }
 .main-block {
   display: flex;
+  height: 120%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 130%;
   background: #ffe4a9;
   position: relative;
 }
@@ -37,6 +37,11 @@ form {
   border-radius: 20px;
   color: brown;
   width: 60%;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .cork {
