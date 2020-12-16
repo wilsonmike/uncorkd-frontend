@@ -102,6 +102,7 @@ img {
 }
 .footer {
   width: 100%;
+  margin-top: 100vh;
 }
 
 .brb-container {
