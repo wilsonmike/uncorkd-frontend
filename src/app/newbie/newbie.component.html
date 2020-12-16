@@ -3,8 +3,31 @@
   <a class="home" routerLink="/home">Home</a>
   <app-headerauth class="header-auth"></app-headerauth>
 </header>
-<div class="accordion">
-  <h3 class="">We help you find your favorite bourbon.</h3>
+<div class="hero-img">
+  <h3 class="hero-info">
+    Enjoy your dive into bourbon, <br />
+    we gave you some resources to get up to speed. 🏊
+  </h3>
+  <img class="glass-img" src="assets/bourbon.png" alt="" />
+</div>
+<div class="def-contain">
+  <mat-accordion>
+    <mat-expansion-panel
+      class="info"
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title> Bourbon </mat-panel-title>
+        <mat-panel-description> Click for definition </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>
+        By law, bourbon must be made from a grain mixture that is at least 51
+        percent corn. Additionally, bourbon is always aged in new charred-oak
+        barrels and distilled to no more than 80 percent ABV.
+      </p>
+    </mat-expansion-panel>
+  </mat-accordion>
   <mat-accordion>
     <mat-expansion-panel
       class="info"
