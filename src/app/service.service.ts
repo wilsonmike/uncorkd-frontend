@@ -3,6 +3,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
 import { Saved } from './interfaces/saved';
 import { ProfileCardComponent } from './profile-card/profile-card.component';
 
@@ -75,6 +76,28 @@ export class ServiceService {
     console.log(bourbon_id, username, rating, user_comment);
     return this.http
       .post(`${this.baseUrl}/bourbons`, data)
+      .subscribe((response) => {
+        console.log(response);
+      });
+  };
+
+  getSubmission = (
+    brand: any,
+    distillery: any,
+    proof: any,
+    upload_img: any,
+    description: any
+  ): any => {
+    const submission = {
+      brand: brand,
+      distillery: distillery,
+      proof: proof,
+      upload_img: upload_img,
+      description: description,
+    };
+    console.log(brand, distillery, proof, upload_img, description);
+    return this.http
+      .post(`${this.baseUrl}/submit`, submission)
       .subscribe((response) => {
         console.log(response);
       });

@@ -31,7 +31,11 @@
           alt="barrel icon"
         />
       </div>
-      <form #inputForm="ngForm" class="sub-form">
+
+      <form #inputForm="ngForm" (ngSubmit)="storeSubmission(inputForm)">
+
+      
+
         <h1>Submit a New Bourbon!</h1>
         <div class="info">
           <label for="brand">Brand Name</label>
@@ -52,21 +56,27 @@
           />
           <label for="proof">Proof</label>
           <input
-            type="number"
-            step="0.01"
+            type="text"
+            
             name="proof"
             id="proof"
             placeholder="Insert Proof Here!"
             ngModel
           />
-          <label for="imageUrl">Image URL</label>
+          <!-- Users may upload a photo from their device OR submit an image URL -->
+          <label for="upload_img">Select image:</label>
+          <input type="file" id="upload_img" name="upload_img" accept="image/*" ngModel>
+
+          <!-- < for="imageUrl">Image URL</
+      step="0.01"
+            label>
           <input
             type="text"
             name="imageUrl"
             id="imageUrl"
             placeholder="Insert Image URL Here!"
             ngModel
-          />
+          /> -->
         </div>
         <p>Description / Tasting Notes</p>
         <div>
@@ -80,7 +90,9 @@
             ngModel
           ></textarea>
         </div>
-        <button>Submit</button>
+        <button
+    
+        >Submit</button>
       </form>
     </div>
   </body>
