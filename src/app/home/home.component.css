@@ -19,7 +19,7 @@ img {
   text-decoration: none;
   font-family: "Amaranth", sans-serif;
   margin-right: 20px;
-  color: #fff7ed;
+  color: brown;
 }
 
 .saved {
@@ -28,7 +28,7 @@ img {
   font-family: "Amaranth", sans-serif;
   margin-left: auto;
   margin-right: 20px;
-  color: #fff7ed;
+  color: brown;
 }
 .ranked {
   font-size: 14px;
@@ -63,7 +63,7 @@ img {
 .branding {
   font-family: "Amaranth", sans-serif;
   font-size: 20px;
-  color: white;
+  color: brown;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
@@ -79,7 +79,7 @@ img {
 .welcome {
   display: flex;
   flex-direction: column;
-  color: #fff7ed;
+  color: brown;
   font-family: "Amaranth", sans-serif;
   font-size: 30px;
   display: flex;
@@ -223,9 +223,6 @@ input[type="range"]::-ms-fill-upper {
   background-color: #9a905d;
 }
 
-@media only screen and (min-width: 370px) {
-}
-
 @media only screen and (min-width: 768px) {
   .flip-card {
     width: 200px;
@@ -237,5 +234,8 @@ input[type="range"]::-ms-fill-upper {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1080px) {
+}
+
+@media only screen and (min-width: 1440px) {
 }
