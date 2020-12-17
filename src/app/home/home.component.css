@@ -91,7 +91,8 @@ img {
   padding: 10px;
 }
 .new-lander {
-  font-family: "Amaranth", sans-serif;
+  display: none;
+  /* font-family: "Amaranth", sans-serif;
   height: 40px;
   width: 150px;
   background-color: #f9f7ed;
@@ -99,7 +100,7 @@ img {
   border: none;
   color: brown;
   outline: none;
-  border: none;
+  border: none; */
 }
 .new-lander:hover {
   background-color: #ffb954;
@@ -302,7 +303,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   margin-top: -9px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .sidebarIconToggle {
     display: block;
   }
@@ -353,7 +354,7 @@ input[type="range"]::-ms-fill-upper {
   background-color: #9a905d;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   .flip-card {
     width: 200px;
     height: 200px;
@@ -372,7 +373,7 @@ input[type="range"]::-ms-fill-upper {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   .header {
     display: flex;
     position: relative;
@@ -382,6 +383,18 @@ input[type="range"]::-ms-fill-upper {
   .logo {
     float: left;
     padding: 10px;
+  }
+  .new-lander {
+    display: block;
+    font-family: "Amaranth", sans-serif;
+    height: 40px;
+    width: 150px;
+    background-color: #f9f7ed;
+    border-radius: 20px;
+    border: none;
+    color: brown;
+    outline: none;
+    border: none;
   }
 }
 
