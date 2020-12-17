@@ -8,10 +8,10 @@
   border: none;
   border-bottom: 1px solid brown;
   border-radius: 3px;
-  background: white;
+  background: transparent;
   margin-right: 5px;
   outline: none;
-  color: #fff7ed;
+  color: brown;
 }
 ::placeholder {
   font-size: 14px;
