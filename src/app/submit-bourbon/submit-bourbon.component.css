@@ -1,6 +1,6 @@
 .form-icon {
-  height: 130px;
-  margin: 25px 10px 0;
+  height: 40px;
+  margin: 120px 15px 0;
   font-size: 72px;
   color: #fff;
 }
@@ -122,6 +122,9 @@ button:hover {
 }
 
 @media (min-width: 768px) {
+  .form-icon {
+    height: 100px;
+  }
   .main-block {
     flex-direction: row;
   }
@@ -140,5 +143,11 @@ button:hover {
   .barrel {
     margin-top: 2%;
     margin-left: 28%;
+  }
+}
+
+@media (min-width: 1080px) {
+  .form-icon {
+    height: 130px;
   }
 }

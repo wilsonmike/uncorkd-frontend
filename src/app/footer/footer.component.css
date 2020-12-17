@@ -1,6 +1,6 @@
 .site-footer {
   background-color: #ffd984;
-  font-size: 15px;
+  font-size: 10px;
   line-height: 20px;
   color: #737373;
   /* position: absolute;
@@ -115,4 +115,8 @@
   background-color: #ea4c89;
 }
 @media only screen and (min-width: 768px) {
+  .site-footer {
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
