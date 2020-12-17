@@ -97,13 +97,13 @@ img {
   background-color: #f9f7ed;
   border-radius: 20px;
   border: none;
-  color: #f8d983;
+  color: brown;
   outline: none;
   border: none;
 }
 .new-lander:hover {
   background-color: #ffb954;
-  color: white;
+  color: brown;
   cursor: pointer;
 }
 
@@ -368,7 +368,7 @@ input[type="range"]::-ms-fill-upper {
 @media only screen and (min-width: 320px) {
   .header {
     display: flex;
-    flex-direction: column;
+    float: right;
   }
 }
 
