@@ -64,6 +64,7 @@
 }
 
 .social-icons {
+  display: none;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -117,6 +118,14 @@
 @media only screen and (min-width: 768px) {
   .site-footer {
     font-size: 15px;
-    line-height: 20px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
   }
 }
