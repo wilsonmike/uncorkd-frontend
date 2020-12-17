@@ -91,19 +91,20 @@ img {
   padding: 10px;
 }
 .new-lander {
-  font-family: "Amaranth", sans-serif;
+  display: none;
+  /* font-family: "Amaranth", sans-serif;
   height: 40px;
   width: 150px;
   background-color: #f9f7ed;
   border-radius: 20px;
   border: none;
-  color: #f8d983;
+  color: brown;
   outline: none;
-  border: none;
+  border: none; */
 }
 .new-lander:hover {
   background-color: #ffb954;
-  color: white;
+  color: brown;
   cursor: pointer;
 }
 
@@ -205,11 +206,11 @@ img {
   width: 100%;
   height: 40px;
   display: block;
-  background: #030303;
+  background: #ffcb69;
   text-align: center;
   padding-top: 15px;
-  border: 1px solid #4b4545;
-  color: whitesmoke;
+  border-bottom: 1px solid brown;
+  color: brown;
   text-decoration: none;
 }
 #sidebarMenu::-webkit-scrollbar {
@@ -224,7 +225,7 @@ img {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  background: #0000002e;
+  background: brown;
   height: 50px;
 }
 .sidebarMenuInner {
@@ -259,7 +260,7 @@ input[type="checkbox"] {
   position: absolute;
   height: 3px;
   width: 100%;
-  background-color: black;
+  background-color: brown;
 }
 .horizontal {
   transition: all 0.3s;
@@ -281,6 +282,9 @@ input[type="checkbox"] {
   float: left;
   margin-top: 3px;
 }
+.lines {
+  display: flex;
+}
 input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
   transition: all 0.3s;
   box-sizing: border-box;
@@ -299,7 +303,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   margin-top: -9px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .sidebarIconToggle {
     display: block;
   }
@@ -350,7 +354,7 @@ input[type="range"]::-ms-fill-upper {
   background-color: #9a905d;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   .flip-card {
     width: 200px;
     height: 200px;
@@ -365,22 +369,32 @@ input[type="range"]::-ms-fill-upper {
 @media only screen and (min-width: 320px) {
   .header {
     display: flex;
-    flex-direction: column;
+    float: right;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   .header {
     display: flex;
     position: relative;
     flex-direction: row;
+    float: right;
   }
   .logo {
-    margin-left: auto 0;
+    float: left;
+    padding: 10px;
   }
-  .saved {
-    display: absolute;
-    right: 0;
+  .new-lander {
+    display: block;
+    font-family: "Amaranth", sans-serif;
+    height: 40px;
+    width: 150px;
+    background-color: #f9f7ed;
+    border-radius: 20px;
+    border: none;
+    color: brown;
+    outline: none;
+    border: none;
   }
 }
 

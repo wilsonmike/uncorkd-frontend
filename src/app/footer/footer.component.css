@@ -1,8 +1,8 @@
 .site-footer {
   background-color: #ffd984;
-  font-size: 15px;
+  font-size: 10px;
   line-height: 20px;
-  color: #737373;
+  color: brown;
   /* position: absolute;
   bottom: 0; */
   width: 100%;
@@ -22,7 +22,7 @@
   letter-spacing: 3px;
 }
 .site-footer a {
-  color: #737373;
+  color: brown;
 }
 .site-footer a:hover {
   color: #fff;
@@ -36,7 +36,7 @@
   display: block;
 }
 .footer-links a {
-  color: #737373;
+  color: brown;
 }
 .footer-links a:active,
 .footer-links a:focus,
@@ -64,15 +64,13 @@
 }
 
 .social-icons {
+  display: none;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
   margin-right: 10px;
 }
-.social-icons li {
-  display: inline-block;
-  margin-bottom: 4px;
-}
+
 .social-icons li.title {
   margin-right: 15px;
   text-transform: uppercase;
@@ -82,7 +80,7 @@
 }
 .social-icons a {
   background-color: #eceeef;
-  color: #818a91;
+  color: brown;
   font-size: 16px;
   display: inline-block;
   line-height: 44px;
@@ -109,10 +107,31 @@
   background-color: #00aced;
 }
 .social-icons a.linkedin:hover {
-  background-color: #ffcb69;
+  background-color: #7dbbe6;
 }
 .social-icons a.dribbble:hover {
   background-color: #ea4c89;
 }
-@media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: 767px) {
+  .site-footer {
+    font-size: 15px;
+  }
+
+  .mike {
+    margin: left auto 0;
+  }
+
+  .social-icons li {
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: auto 0;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-left: auto 0;
+  }
 }

@@ -2,3 +2,6 @@
   background-color: #ffd984;
   display: flex;
 }
+.sub-b {
+  outline: none;
+}
