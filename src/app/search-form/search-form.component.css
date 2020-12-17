@@ -2,7 +2,7 @@
   font-size: 16px;
   font-family: "Amaranth", sans-serif;
   margin-right: 10px;
-  color: #fff7ed;
+  color: brown;
 }
 .input {
   border: none;
@@ -21,7 +21,7 @@
 .submit-search {
   font-family: "Amaranth", sans-serif;
   background-color: #ffb954;
-  color: white;
+  color: brown;
   border: none;
   outline: none;
   height: 30px;
