@@ -11,6 +11,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MatCardModule } from '@angular/material/card';
@@ -78,6 +79,7 @@ import { FooterComponent } from './footer/footer.component';
     AppFirebaseModule,
     MatCardModule,
     MatExpansionModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
