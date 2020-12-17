@@ -9,12 +9,6 @@ import { AuthService } from '../services/auth/auth.service';
   styleUrls: ['./submit-bourbon.component.css'],
 })
 export class SubmitBourbonComponent implements OnInit {
-  brand = '';
-  distillery = '';
-  proof = '';
-  upload_img = '';
-  description = '';
-
   constructor(
     private service: ServiceService,
     private authService: AuthService
@@ -23,11 +17,11 @@ export class SubmitBourbonComponent implements OnInit {
   ngOnInit(): void {}
 
   getSubmission = (
-    brand: string,
-    distillery: string,
-    proof: number,
+    brand: any,
+    distillery: any,
+    proof: any,
     upload_img: any,
-    description: string
+    description: any
   ): any => {
     return this.service.getSubmission(
       brand,
@@ -40,11 +34,11 @@ export class SubmitBourbonComponent implements OnInit {
 
   storeSubmission = (form: NgForm) => {
     console.log(form.value);
-    this.brand = form.value;
-    this.distillery = form.value;
-    this.proof = form.value;
-    this.upload_img = form.value;
-    this.description = form.value;
-    return form.value;
+    let brand = form.value.brand;
+    let distillery = form.value.distillery;
+    let proof = form.value.proof;
+    let upload_img = form.value.upload_img;
+    let description = form.value.description;
+    this.getSubmission(brand, distillery, proof, upload_img, description);
   };
 }

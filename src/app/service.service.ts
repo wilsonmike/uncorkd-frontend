@@ -91,13 +91,13 @@ export class ServiceService {
     const submission = {
       brand: brand,
       distillery: distillery,
-      proof: parseInt(proof),
+      proof: proof,
       upload_img: upload_img,
       description: description,
     };
     console.log(brand, distillery, proof, upload_img, description);
     return this.http
-      .post(`${this.baseUrl}/bourbons`, submission)
+      .post(`${this.baseUrl}/submit`, submission)
       .subscribe((response) => {
         console.log(response);
       });

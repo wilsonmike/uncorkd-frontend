@@ -52,18 +52,20 @@
           />
           <label for="proof">Proof</label>
           <input
-            type="number"
-            step="0.01"
+            type="text"
+            
             name="proof"
             id="proof"
             placeholder="Insert Proof Here!"
             ngModel
           />
           <!-- Users may upload a photo from their device OR submit an image URL -->
-          <label for="img">Select image:</label>
-          <input type="file" id="upload_img" name="img" accept="image/*" ngModel>
+          <label for="upload_img">Select image:</label>
+          <input type="file" id="upload_img" name="upload_img" accept="image/*" ngModel>
 
-          <!-- <label for="imageUrl">Image URL</label>
+          <!-- < for="imageUrl">Image URL</
+      step="0.01"
+            label>
           <input
             type="text"
             name="imageUrl"
@@ -85,13 +87,7 @@
           ></textarea>
         </div>
         <button
-        (click)="getSubmission(
-          brand,
-          distillery,
-          proof,
-          upload_img,
-          description
-        )"
+    
         >Submit</button>
       </form>
     </div>
