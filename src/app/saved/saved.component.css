@@ -49,10 +49,17 @@ textarea {
 .star-input:checked + .star ~ .star {
   color: rgb(245, 242, 197);
 }
-img {
+.bourbon-img {
   width: 300px;
   height: 300px;
   object-fit: contain;
+}
+.delete-btn {
+  height: 20px;
+  width: 20px;
+  margin-left: 20px;
+  /* margin-top: 25px; */
+  padding: 3px;
 }
 .submit-star {
   border: none;
