@@ -12,7 +12,11 @@
 </header>
 <div class="bourbon-container">
   <ul class="brb-container" *ngFor="let save of saved">
-    <img src="{{ save.img_url }}" alt="Picture of Bourbon" />
+    <img
+      class="bourbon-img"
+      src="{{ save.img_url }}"
+      alt="Picture of Bourbon"
+    />
     <div class="d-wrapper">
       <li class="b-brand">{{ save.brand }}</li>
       <li class="b-description">{{ save.description }}</li>
@@ -108,6 +112,12 @@
           </button>
           <app-profile-card [user]="user" (logoutClick)="logout()">
           </app-profile-card>
+          <img
+            class="delete-btn"
+            (click)="removeSaved(save)"
+            src="./assets/deleteGold.svg"
+            alt=""
+          />
         </ng-container>
       </div>
     </form>
