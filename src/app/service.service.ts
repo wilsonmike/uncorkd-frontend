@@ -1,5 +1,5 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-
+import { environment } from 'src/environments/environment';
 import { Injectable } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -11,7 +11,7 @@ import { ProfileCardComponent } from './profile-card/profile-card.component';
   providedIn: 'root',
 })
 export class ServiceService {
-  baseUrl: string = 'http://localhost:3000';
+  baseUrl: string = environment.apiBaseUrl;
   saved: Saved[] = [];
 
   constructor(private router: Router, private http: HttpClient) {}
