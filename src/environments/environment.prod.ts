@@ -1,5 +1,6 @@
 export const environment = {
   production: true,
+  apiBaseUrl: 'https://uncorkdproject.herokuapp.com',
   firebase: {
     apiKey: 'AIzaSyA7L7SPobNngSNPfaoWm0EoOjIDjDCeKWs',
     authDomain: 'uncorkd-f5f76.firebaseapp.com',
