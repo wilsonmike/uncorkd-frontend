@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'http://localhost:3000',
-  // apiBaseUrl: 'https://uncorkdproject.herokuapp.com',
+  //apiBaseUrl: 'http://localhost:3000',
+  apiBaseUrl: 'https://uncorkdproject.herokuapp.com',
   firebase: {
     apiKey: 'AIzaSyA7L7SPobNngSNPfaoWm0EoOjIDjDCeKWs',
     authDomain: 'uncorkd-f5f76.firebaseapp.com',
